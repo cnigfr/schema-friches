@@ -1,9 +1,12 @@
 # GT CNIG Friches
 Ceci est le Github du [GT CNIG Friches](http://cnig.gouv.fr/?page_id=26033) fonctionnant suivant [ce mandat](http://cnig.gouv.fr/wp-content/uploads/2022/03/220310_mandat_GT_CNIG_Friches.pdf).
 
-_... en construction ..._
 
 
+
+
+
+#_... en construction ..._#
 
 
 Dépot des documents et travaux du groupe de travail pour l'élaboration du Géostandard Friches.
