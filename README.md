@@ -6,13 +6,13 @@ _... en construction ..._
 
 
 
-Dépot des documents et travaux du groupe de travail pour la refonte des Géostandards Friches.
+Dépot des documents et travaux du groupe de travail pour l'élaboration du Géostandard Friches.
 
 ## Présentation 
 
-Le Groupe de travail pour la refonte des Géostandards Friches a pour objectif de      
+Le Groupe de travail a pour objectif de      
 
-Il oeuvre sous mandat de la **Commission Standards du Conseil National de l'Information Géolocalisée** (CNIG). Le **mandat du Groupe de Travail** peut être consulté [ici](http://cnig.gouv.fr/wp-content/uploads/2021/10/MandatModernisationStandardsRisque-vf.pdf). La page dédiée de ce groupe sur le **site du CNIG** est accessible [ici](http://cnig.gouv.fr/?page_id=25378). 
+Il oeuvre sous mandat de la **Commission Standards du Conseil National de l'Information Géolocalisée** (CNIG). Le **mandat du Groupe de Travail**, validé le 10 mars 2022, peut être consulté ici. La page dédiée de ce groupe sur le **site du CNIG** est accessible ici. 
 
 ## Organisation du dépot
 
