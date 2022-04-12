@@ -1,6 +1,6 @@
 # Documents et ressources liés à l'élaboration du standard Friches.
 
-[Requalification des friches urbaines : enjeu majeur pour les collectivités](https://www.lagazettedescommunes.com/dossiers/requalification-des-friches-urbaines-enjeu-majeur-pour-les-collectivites/) - doss. Techni-cités
+[Requalification des friches urbaines : enjeu majeur pour les collectivités](https://www.lagazettedescommunes.com/dossiers/requalification-des-friches-urbaines-enjeu-majeur-pour-les-collectivites/) - dossier Techni-cités
 
 [Communiqué de presse - 1er Ministre - 8 janvier 2022 - Fonds friches](https://github.com/cnigfr/Friches/blob/main/documentation/Communique_de_presse_de_m__jean_castex_premier_ministre___100_millions_deuros_supplementaires_pour_le_recyclage_des_friches___08_01_2022_0.pdf) : 100 millions d'euros supplementaires pour le recyclage des friches
 
