@@ -27,7 +27,7 @@ le groupe de travail dispose d'une **[page dédiée](http://cnig.gouv.fr/?page_i
 
 Pour être tenu au courant et/ou participer aux échanges du GT CNIG Friches, merci de [contacter le CNIG](http://cnig.gouv.fr/?page_id=609).
 
-Il est égalment possible de s'abonner à la [lettre d'information du CNIG](http://cnig.gouv.fr/).
+Il est également possible de s'abonner à la [lettre d'information du CNIG](http://cnig.gouv.fr/).
 
 
 ## Contributions
