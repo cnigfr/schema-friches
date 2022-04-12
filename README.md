@@ -16,7 +16,7 @@ le groupe de travail dispose d'une **[page dédiée](http://cnig.gouv.fr/?page_i
 
 ## Organisation du dépot
 
-* Le répertoire documentation contient les documents utiles au groupe de travail
+* Le répertoire [documentation](https://github.com/cnigfr/Friches/tree/main/documentation) contient les documents utiles au groupe de travail
 
 * Le répertoire réunions contient les documents de suivi du groupe de travail : présentations et compte-rendus des réunions du groupe.
 
