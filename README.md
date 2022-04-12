@@ -18,6 +18,6 @@ le groupe de travail dispose d'une **[page dédiée](http://cnig.gouv.fr/?page_i
 
 * Le répertoire [documentation](https://github.com/cnigfr/Friches/tree/main/documentation) contient les documents utiles au groupe de travail
 
-* Le répertoire réunions contient les documents de suivi du groupe de travail : présentations et compte-rendus des réunions du groupe.
+* Le répertoire [réunions](https://github.com/cnigfr/Friches/tree/main/r%C3%A9unions) contient les documents de suivi du groupe de travail : présentations et compte-rendus des réunions du groupe.
 
 * Le répertoire standard contient le standard Friches en cours délaboration.
