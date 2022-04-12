@@ -42,7 +42,7 @@ Pour plus d'informations sur ce mode de collaboration, vous pouvez vous référe
 
 ## Licence
 
-Les travaux du GT CNIG Friches sont sous Licence Ouverte Etalab 2.0
+Les travaux du GT CNIG Friches sont sous [Licence Ouverte Etalab 2.0](https://www.etalab.gouv.fr/licence-ouverte-open-licence/)
 
 ![licence ouverte](https://github.com/cnigfr/Friches/blob/main/documentation/images/Licence%20ouverte.png)
 
