@@ -21,3 +21,23 @@ le groupe de travail dispose d'une **[page dédiée](http://cnig.gouv.fr/?page_i
 * Le répertoire [réunions](https://github.com/cnigfr/Friches/tree/main/r%C3%A9unions) contient les documents de suivi du groupe de travail : présentations et compte-rendus des réunions du groupe.
 
 * Le répertoire [standard](https://github.com/cnigfr/Friches/tree/main/standard) contient le standard Friches en cours d'élaboration.
+
+
+## Informations et particpation au groupe de travail
+
+Pour être tenu au courant et/ou participer aux échanges du GT CNIG Friches, merci de [contacter le CNIG](http://cnig.gouv.fr/?page_id=609).
+
+Il est égalment possible de s'abonner à la [lettre d'information du CNIG](http://cnig.gouv.fr/).
+
+
+## Contributions
+
+Vous pouvez également utiliser les outils proposés par github :
+
+* Poser des questions, demandes d'évolutions via les [Issues](https://github.com/cnigfr/Friches/issues) 
+
+* Proposer des évolutions / corrections via les [Pull Requests](https://github.com/pulls)
+
+Pour plus d'informations sur ce mode de collaboration, vous pouvez vous référer à la [documentation Github](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests).
+  
+  
