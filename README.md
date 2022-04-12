@@ -39,5 +39,12 @@ Vous pouvez également utiliser les outils proposés par github :
 * Proposer des évolutions / corrections via les [Pull Requests](https://github.com/pulls)
 
 Pour plus d'informations sur ce mode de collaboration, vous pouvez vous référer à la [documentation Github](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests).
+
+## Licence
+
+Les travaux du GT CNIG Friches sont sous Licence Ouverte Etalab 2.0
+
+![licence ouverte](https://github.com/cnigfr/Friches/blob/main/documentation/images/Licence%20ouverte.png)
+
   
   
