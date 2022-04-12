@@ -14,16 +14,10 @@ Le **[mandat du Groupe de Travail](http://cnig.gouv.fr/wp-content/uploads/2022/0
 le groupe de travail dispose d'une **[page dédiée](http://cnig.gouv.fr/?page_id=26033)** sur le site du CNIG.
 
 
-
-
-
-# _... en construction ..._
-
-
-Dépot des documents et travaux du groupe de travail pour l'élaboration du Géostandard Friches.
-
-
-
 ## Organisation du dépot
 
-* Le répertoire ...
+* Le répertoire documentation contient les documents utiles au groupe de travail
+
+* Le répertoire réunions contient les documents de suivi du groupe de travail : présentations et compte-rendus des réunions du groupe.
+
+* Le répertoire standard contient le standard Friches en cours délaboration.
