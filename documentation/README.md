@@ -8,7 +8,7 @@ Requalification des friches urbaines : enjeu majeur pour les collectivités - do
 
 Plateforme nationale [Cartofriches](https://cartofriches.cerema.fr/cartofriches/)
 
-. [Cartofriches présentée sur le site du CEREMA](https://www.cerema.fr/fr/mots-cles/cartofriches)
+* [Cartofriches présentée sur le site du CEREMA](https://www.cerema.fr/fr/mots-cles/cartofriches)
 
 [Laboratoire d’innovations foncières et territoriales innovantes](https://lifti.org/) (LIFTI)
 
