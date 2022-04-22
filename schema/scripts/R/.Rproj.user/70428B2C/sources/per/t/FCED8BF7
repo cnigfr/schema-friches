@@ -1,0 +1,27 @@
+{
+    "id": "FCED8BF7",
+    "path": "C:/Users/mathieu.rajerison/Desktop/TAFF_MAISON/GIT/schema-arrete-circulation-marchandises/scripts/R/transform-exemples.Rmd",
+    "project_path": "transform-exemples.Rmd",
+    "type": "r_markdown",
+    "hash": "69512080",
+    "contents": "",
+    "dirty": false,
+    "created": 1647880164226.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "chunk_output_type": "inline",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "80,1",
+        "scrollLine": "70"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1647881227,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1647881227700,
+    "read_only": false,
+    "read_only_alternatives": []
+}

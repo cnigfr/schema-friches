@@ -1,0 +1,2 @@
+"0","s <- read_json(""../../schema.json"")"
+"0","fields <- sapply(s$fields, function(elt) elt$name)"

@@ -1,0 +1,46 @@
+"0","library(tidyverse)"
+"2","le package ‘tidyverse’ a été compilé avec la version R 4.0.5"
+"2","Registered S3 methods overwritten by 'dbplyr':
+  method         from
+  print.tbl_lazy     
+  print.tbl_sql      
+"
+"2","[37m-- [1mAttaching packages[22m -------------------------------------------------- tidyverse 1.3.1 --[39m
+"
+"2","[37m[32mv[37m [34mggplot2[37m 3.3.5     [32mv[37m [34mpurrr  [37m 0.3.4
+[32mv[37m [34mtibble [37m 3.1.3     [32mv[37m [34mdplyr  [37m 1.0.7
+[32mv[37m [34mtidyr  [37m 1.1.3     [32mv[37m [34mstringr[37m 1.4.0
+[32mv[37m [34mreadr  [37m 2.0.0     [32mv[37m [34mforcats[37m 0.5.1[39m
+"
+"2","le package ‘ggplot2’ a été compilé avec la version R 4.0.5"
+"2","le package ‘tibble’ a été compilé avec la version R 4.0.5"
+"2","le package ‘tidyr’ a été compilé avec la version R 4.0.5"
+"2","le package ‘readr’ a été compilé avec la version R 4.0.5"
+"2","le package ‘purrr’ a été compilé avec la version R 4.0.5"
+"2","le package ‘dplyr’ a été compilé avec la version R 4.0.5"
+"2","le package ‘stringr’ a été compilé avec la version R 4.0.5"
+"2","le package ‘forcats’ a été compilé avec la version R 4.0.5"
+"2","[37m-- [1mConflicts[22m ----------------------------------------------------- tidyverse_conflicts() --
+[31mx[37m [34mdplyr[37m::[32mfilter()[37m masks [34mstats[37m::filter()
+[31mx[37m [34mdplyr[37m::[32mlag()[37m    masks [34mstats[37m::lag()[39m
+"
+"0","library(jsonlite)"
+"2","
+Attachement du package : ‘jsonlite’
+
+"
+"2","The following object is masked from ‘package:purrr’:
+
+    flatten
+
+"
+"0","library(glue)"
+"2","
+Attachement du package : ‘glue’
+
+"
+"2","The following object is masked from ‘package:dplyr’:
+
+    collapse
+
+"

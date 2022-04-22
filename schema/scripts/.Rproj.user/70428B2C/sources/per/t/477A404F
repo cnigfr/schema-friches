@@ -1,0 +1,28 @@
+{
+    "id": "477A404F",
+    "path": "C:/Users/mathieu.rajerison/Desktop/TAFF_MAISON/GIT/schema-arrete-permanent-circulation/scripts/R/transform-exemples.Rmd",
+    "project_path": "R/transform-exemples.Rmd",
+    "type": "r_markdown",
+    "hash": "3872004773",
+    "contents": "",
+    "dirty": false,
+    "created": 1644933985681.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "tempName": "Untitled1",
+        "chunk_output_type": "inline",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "27,42",
+        "scrollLine": "22"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1644934217,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1644934217285,
+    "read_only": false,
+    "read_only_alternatives": []
+}

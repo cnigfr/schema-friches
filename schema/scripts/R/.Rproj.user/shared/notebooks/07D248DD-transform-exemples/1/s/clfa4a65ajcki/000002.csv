@@ -1,0 +1,10 @@
+"0","df1 <- read.csv(""../../exemple-valide.csv"", encoding = ""UTF-8"")"
+"0","df2 <- correctFile(df1, fields)"
+"2",">> REGL_CONTEXTE n'existe pas. On ne remplit à NA
+"
+"2",">> VEH_TONNAGE_MODALITE n'existe pas. On ne remplit à NA
+"
+"2",">> PERIODE_FIN n'existe pas. On ne remplit à NA
+"
+"2",">> EMPRISE_ZONE n'existe pas. On ne remplit à NA
+"

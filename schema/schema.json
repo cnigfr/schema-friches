@@ -1,0 +1,534 @@
+{
+   "$schema":"https://specs.frictionlessdata.io/schemas/table-schema.json",
+   "name":"schema-friches",
+   "title":"Friches industrielles",
+   "description":"Spécification du fichier d'échange relatif aux friches industrielles",
+   "keywords":[
+      "landuse",
+      "brownfield",
+      "artificialization",
+      "planning",
+      "industrial",
+      "reconversion"
+   ],
+   "countryCode":"FR",
+   "homepage":"https://github.com/cnigfr/Friches",
+   "path":"https://github.com/CEREMA/schema-arrete-circulation-marchandises/raw/v0.8.0/schema.json/xxx",
+   "image":"https://raw.githubusercontent.com/CEREMA/schema-arrete-circulation-marchandises/v0.8.0/files/image.png/xxx",
+   "licenses":[
+      {
+         "title":"Etalab Licence Ouverte 2.0",
+         "name":"etalab-2.0",
+         "path":"https://spdx.org/licenses/etalab-2.0.html"
+      }
+   ],
+   "resources":[
+      {
+         "title":"Fichier valide",
+         "name":"exemple-valide-csv",
+         "path":"https://raw.githubusercontent.com/CEREMA/schema-arrete-circulation-marchandises/v0.8.0/exemple-valide.csv/xxx"
+      }
+   ],
+   "sources":[
+      {
+         "title":"Standard CNIG Friches",
+         "path":"https://github.com/CEREMA/schema-arrete-permanent-circulation/blob/v0.8.0/ressources/fiche_technique_arrete_de_circulation_cle27195e-1.pdf"
+      }
+   ],
+   "created":"2022-04-22",
+   "lastModified":"2022-04-22",
+   "version":"0.1.0",
+   "contributors":[
+      {
+         "title":"Arnauld Gallais",
+         "email":"arnauld.gallais@cerema.fr",
+         "organisation":"Cerema",
+         "role":"author"
+      },
+      {
+         "title":"Mathieu Rajerison",
+         "email":"mathieu.rajerison@cerema.fr",
+         "organisation":"Cerema",
+         "role":"author"
+      },
+      {
+         "title":"Martin Bocquet",
+         "email":"martin.bocquet@cerema.fr",
+         "organisation":"Cerema",
+         "role":"author"
+      }
+   ],
+   "fields":[
+      {
+         "name":"site_numero",
+         "title":"Identifiant du site",
+         "description":"Il est créé à partir de l’identifiant de la base.",
+         "example":"xxx-xxx",
+         "type":"string",
+         "constraints":{
+            "required":true,
+            "unique":true
+         }
+      },
+      {
+         "name":"activite_libelle",
+         "title":"Ancienne activité (libellé)",
+         "description":"Libellé de l'ancienne activité",
+         "example":"Extraction de houille, Terrils ou crassier de mines",
+         "type":"string",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"activite_code",
+         "title":"Ancienne activité (code)",
+         "description":"Code BASIAS de l'ancienne activité",
+         "type":"string",
+         "example":" B05.10Z, V89.04Z",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"activite_date",
+         "title":"Date de fin de l'activité",
+         "description":"Date de fin de l'activité, au format ISO 8601 AAAA-MM-DD.",
+         "example":"1989-12-15",
+         "type":"date",
+         "format":"%Y-%m-%d",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"tup_surface",
+         "title":"Surface de l'unité foncière",
+         "description":"Surface de l'unité foncière, en conformité avec la documentation sur la [Table Unifiée du Parcellaire (TUP)](https://datafoncier.cerema.fr/sites/datafoncier/files/inline-files/notice_tup.pdf). Unité : m²",
+         "type":"string",
+         "example":"AP-13090-12",
+         "constraints":{
+            "required":true
+         }
+      },
+      {
+         "name":"adresse",
+         "title":"Adresse du site",
+         "description":"Adresse du site.",
+         "type":"string",
+         "example":"xxx",
+         "constraints":{
+            "pattern":"^[a-zA-Z0-9\\-\\'\\s\\d\\u00C0-\\u00FF]+$",
+            "required":true
+         }
+      },
+      {
+         "name":"comm_nom",
+         "title":"Commune (nom)",
+         "description":"Nom de la commune",
+         "type":"string",
+         "example":"xxx",
+         "constraints":{
+            "required":true,
+            "pattern":"^[A-Za-z\\s\\-\\u00C0-\\u00FF]+$"
+         }
+      },
+      {
+         "name":"comm_insee",
+         "title":"Commune (code INSEE)",
+         "description":"Code INSEE de la commune.",
+         "type":"string",
+         "example":"xxx",
+         "constraints":{
+            "required":true
+         }
+      },
+      {
+         "name":"site_nom",
+         "title":"Nom du site",
+         "description":"Nom du site. Son nom usuel en absence de nom officie",
+         "type":"string",
+         "example":"xxx",
+         "constraints":{
+            "required":true
+         }
+      },
+      {
+         "name":"site_url",
+         "title":"URL de la fiche",
+         "description":"URL de mla fiche BASOL ou BASIAS.",
+         "type":"string",
+         "format":"uri",
+         "example":"xxx",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"tup_refcad",
+         "title":"Identifiants parcellaires",
+         "description":"Liste des identifiants des parcelles de l’unité foncière.",
+         "type":"string",
+         "example":"44184000CN0005, 44184000CN0041, 44184000CN0042",
+         "constraints":{
+            "required":true
+         }
+      },
+      {
+         "name":"urba_zone_type",
+         "title":"Zonage d'urbanisme (type)",
+         "description":"Type du zonage d'urbanisme. Référentiel TYPEZONE : http://cnig.gouv.fr/?page_id=2732",
+         "type":"string",
+         "example":"xxx",
+         "constraints":{
+            "required":false,
+            "enum":[
+               "U",
+               "AUc",
+               "AUs",
+               "A",
+               "N"
+            ]
+         }
+      },
+      {
+         "name":"urba_zone_lib",
+         "title":"Zonage d'urbanisme (libellé)",
+         "description":"Libellé du zonage d'urbanisme. Référentiel LIBELLE http://cnig.gouv.fr/?page_id=2732",
+         "type":"string",
+         "example":"Poids lourds|Véhicules utilitaires légers",
+         "constraints":{
+            "required":false,
+            "enum":[
+               "xxx",
+               "xxx"
+            ]
+         }
+      },
+      {
+         "name":"urba_zone_destdomi",
+         "title":"Zonage d'urbanisme (destination dominante)",
+         "description":"Destination dominante du zonage d'urbanisme",
+         "type":"string",
+         "example":"xxx",
+         "constraints":{
+            "required":false,
+            "enum":[
+               "xxx",
+               "xxx"
+            ]
+         }
+      },
+      {
+         "name":"urba_doc_appro_date",
+         "title":"Date d’approbation du document d'urbanisme",
+         "description":"Date d’approbation du document d'urbanisme",
+         "type":"date",
+         "format":"%Y-%m-%d",
+         "example":"xxx",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"urba_doc_type",
+         "title":"Type du document d'urbanisme",
+         "description":"Type du document d'urbanisme",
+         "example":"CC",
+         "type":"string",
+         "constraints":{
+            "required":false,
+            "enum":[
+               "CC",
+               "POS",
+               "PLU",
+               "PLUI",
+               "PSMV",
+               "SCOT"
+            ]
+         }
+      },
+      {
+         "name":"pollution_annee",
+         "title":"Année de la pollution",
+         "description":"Année où la pollution a été constatée",
+         "type":"date",
+         "format":"%Y",
+         "example":"1989",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"pollution_risque",
+         "title":"Risque de pollution",
+         "description":"Risque de pollution.",
+         "type":"boolean",
+         "trueValues":[
+            "oui",
+            "Oui",
+            "true",
+            "True",
+            "TRUE",
+            "1"
+         ],
+         "falseValues":[
+            "non",
+            "Non",
+            "false",
+            "False",
+            "FALSE",
+            "0"
+         ],
+         "example":"Oui",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"pollution_existe",
+         "title":"Existence de la pollution",
+         "description":"Existence de la pollution",
+         "example":"01",
+         "type":"string",
+         "constraints":{
+            "required":false,
+            "enum":[
+               "01",
+               "02",
+               "03"
+            ]
+         }
+      },
+      {
+         "name":"site_en_securite",
+         "title":"Sécurisation du site",
+         "description":"Description du type de sécurisation dans BASOL",
+         "example":"01",
+         "type":"string",
+         "constraints":{
+            "required":false,
+            "enum":[
+               "01",
+               "02",
+               "03",
+               "04",
+               "05",
+               "06",
+               "07",
+               "08",
+               "98"
+            ]
+         }
+      },
+      {
+         "name":"depollution_fiche_url",
+         "title":"Fiche de dépollution",
+         "description":"Lien vers la fiche de dépollution si elle est présente dans BASOL",
+         "type":"string",
+         "format":"uri",
+         "example":"xxx",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"pollution_origine",
+         "title":"Origine de la pollution",
+         "description":"Origine de la pollution.",
+         "example":"xxx",
+         "type":"string",
+         "constraints":{
+            "required":false,
+            "enum":[
+               "01",
+               "02",
+               "03",
+               "04",
+               "98"
+            ]
+         }
+      },
+      {
+         "name":"type_sol",
+         "title":"Type de sol",
+         "description":"Type de sol",
+         "example":"xxx",
+         "type":"string",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"mutation_acte_date",
+         "title":"Date de l'acte de mutation",
+         "description":"Date de l'acte de mutation (date de dernière vente de la parcelle)",
+         "example":"xxx",
+         "type":"date",
+         "format":"%Y-%m-%d",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"bati_nombre",
+         "title":"Nombre de bâtiments",
+         "description":"Nombre de bâtiments sur l'unité foncière",
+         "example":"3",
+         "type":"number",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"local_ancien_annee",
+         "title":"Année de construction du local le plus ancien",
+         "description":"Année de construction du local le plus ancien",
+         "type":"date",
+         "format":"%Y",
+         "example":"1989",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"local_ancien_annee",
+         "title":"Année de construction du local le plus récent",
+         "description":"Année de construction du local le plus récent",
+         "type":"date",
+         "format":"%Y",
+         "example":"1998",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"projet_existe",
+         "title":"Existence d'un projet",
+         "description":"L’existence d’un projet sur le site est une information locale, et est présente si elle est transmise par le producteur. Pour les données issues d’appels à projets, il est considéré par défaut qu’il existe un projet sur le site.",
+         "type":"boolean",
+         "example":"xxx",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"prop_ancien_nom",
+         "title":"Nom de l'ancien propriétaire",
+         "description":"Nom de l'ancien propriétaire",
+         "type":"string",
+         "example":"Mairie d'Aix-en-Provence",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"prop_ancien_type",
+         "title":"Type de l'ancien propriétaire",
+         "description":"Type de l'ancien propriétaire",
+         "type":"string",
+         "example":"Personne morale",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"prop_actuel_nom",
+         "title":"Nom du propriétaire actuel",
+         "description":"Nom du propriétaire actuel",
+         "type":"string",
+         "example":"_X_",
+         "constraints":{
+            "required":true
+         }
+      },
+      {
+         "name":"prop_actuel_type",
+         "title":"Type du propriétaire actuel",
+         "description":"Type du propriétaire actuel",
+         "type":"string",
+         "example":"Personne morale",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"source_nom",
+         "title":"Nom court de la source",
+         "description":"nom court de la source ayant permis l’identification du site",
+         "example":"BASIAS",
+         "type":"string",
+         "constraints":{
+            "required":true
+         }
+      },
+      {
+         "name":"source_url",
+         "title":"URL de la source",
+         "description":"URL de la source de l'information, par exemple celui du site web d'un observatoire de friches",
+         "example":"xxx",
+         "type":"string",
+         "format":"uri",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"producteur",
+         "title":"Producteur de la donnée",
+         "description":"Identification du producteur de la donnée",
+         "type":"string",
+         "example":"'Région', 'DDT des Ardennes', 'Appel à projet Fonds Friches'",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"contact",
+         "title":"Adresse mail du contact",
+         "description":"adresse mail de la structure ayant fourni l'information sur le site",
+         "type":"string",
+         "example":"'Région', 'DDT des Ardennes', 'Appel à projet Fonds Friches'",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"longitude",
+         "title":"Longitude du site",
+         "description":"Longitude du site (coordonnée X)",
+         "type":"number",
+         "example":"5.89576",
+         "constraints":{
+            "required":true
+         }
+      },
+      {
+         "name":"latitude",
+         "title":"Latitude du site",
+         "description":"Latitude du site (coordonnée Y)",
+         "type":"number",
+         "example":"43.53591",
+         "constraints":{
+            "required":true
+         }
+      },
+      {
+         "name":"geomsurf",
+         "title":"Géométrie du site",
+         "description":"Géométrie du périmètre du site au format WKT ([Well_Known-Text](https://fr.wikipedia.org/wiki/Well-known_text)",
+         "type":"string",
+         "example":"xxx",
+         "constraints":{
+            "required":false
+         }
+      }
+   ],
+   "missingValues":[
+      "",
+      "NA",
+      "NaN",
+      "N/A"
+   ],
+   "primaryKey":"site_numero"
+}

@@ -1,0 +1,1 @@
+"0","write.csv(df2, ""../../exemple-valide.csv"", fileEncoding = ""UTF-8"", row.names = F, na = """")"

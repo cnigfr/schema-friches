@@ -1,0 +1,72 @@
+---
+title: "Met les exemples en conformité avec le schéma"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(jsonlite)
+library(glue)
+```
+On lit le schéma :
+```{r}
+s <- read_json("../schema.json")
+fields <- sapply(s$fields, function(elt) elt$name)
+```
+
+Fonction de correction des fichiers :
+```{r}
+correctFile <- function(inputFile, fields) {
+  f <- read.csv(inputFile, encoding = "UTF-8")
+  
+  df_l <- list()
+  # On parcourt chaque champ du schéma pour voir s'il existe ou non dans la donnée
+  # S'il n'existe pas, on le rajoute
+  for(field in fields) {
+    if(!(field %in% names(f))) {
+      message(">> ", field, " n'existe pas. On ne remplit à NA")
+      # Ajout de la colonne avec valeur NA
+      df_l[[field]] <- NA
+    } else {
+      # On prend la colonne précédente
+      df_l[[field]] <- f[[field]]
+    }
+    
+    # Rajoute les 0 le cas échéant à COLL_INSEE
+    if(field == "COLL_INSEE") {
+      df_l[[field]] <- f[[field]] %>% str_pad(5, side = "left", pad = "0")
+    }
+  }
+  
+  # On convertit la liste en data frame
+  df <- data.frame(df_l)
+  
+  return(df)
+}
+```
+
+Correction de l'exemple principal :
+```{r}
+df <- correctFile("../exemple-valide.csv", fields)
+# write.csv(df, "../exemple-valide-new.csv", fileEncoding = "UTF-8", row.names = F, na = "")
+write.csv(df, "../exemple-valide.csv", fileEncoding = "UTF-8", row.names = F, na = "")
+```
+
+On lit les fichiers du répertoire :
+```{r}
+l <- list.files("../exemples", "*.csv", full.names = T)
+```
+
+
+
+```{r}
+for(inputFile in l) {
+  message(">> file : ", inputFile)
+  df <- correctFile(inputFile, fields)
+  names(df)
+  # write.csv(df, glue("{elt}-new.csv"), fileEncoding = "UTF-8", row.names = F, na = "")
+  # write.csv(df, elt, fileEncoding = "UTF-8", row.names = F, na = "")
+}
+
+```
+
