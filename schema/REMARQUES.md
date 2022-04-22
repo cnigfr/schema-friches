@@ -1,22 +1,50 @@
+# champs-1.ods
+La liste des modifications à réaliser est dans le fichier scripts/R/outputs/champs-1.ods
+
 # Noms de champs et affectation à des familles
 Association de champs à certaines familles : sol, site, source
 
 - comm_code => comm_insee
-- depollution_fiche_url => sol_depollution_fiche
+- depollution_fiche_url => sol_depollution_fiche (si dépollution associée uniquement à sol)
+- pollution => sol_pollution (si dépollution associée uniquement à sol)
 - adresse => site_adresse
 - fiche_url => site_url
 - prop => proprio. Ex. prop_ancien_nom => proprio_ancien_nom
 - producteur => source_producteur
 - contact => source_contact
 - type_sol => sol_type
+- activite_date => activite_fin_date
+
+# Dates
+Format ISO 8601 à adopter
+
+2022-04-22
 
 # Champs à enlever du schéma
 Pas sûr qu'il faille mettre les infos doc urba
 
 # Champs obligatoires
-- adresse => pas obligatoire
-- tup_refcad => ne pas rendre obligatoire
-- Pourquoi prop_actuel_nom obligatoire et pas prop_actuel_nom ? Rendre prop_actuel_nom facultatif
+Les champs suivants pourraient être mis en facultatif :
+- comm_nom
+- comm_insee
+- tup_surface
+- tup_refcad
+- prop_actuel_nom : Pourquoi prop_actuel_nom obligatoire et pas prop_actuel_nom ? Rendre prop_actuel_nom facultatif
+
+comm_nom, adresse, comm_insee sont retrouvables pgrâce aux coordonnées
+
+tup_refcad, tup_surface peuvent aussi être mis en facultatif car la géométrie est facultative
+
+Les seuls champs obligatoires seraient donc :
+
+2. longitude
+3. latitude
+
+
+Eventuellement :
+
+1. site_nom (discutable, description possible du site)
+4. source_nom (discutable, peut être le mode de remplissage : saisie terrain, etc...)
 
 # Géométrie
 latitude, longitude => geom_point. Permet d'avoir une identification de site sur publier.etalab.studio
@@ -49,6 +77,19 @@ Ordonner les champs selon la famille, par ordre alphabétique, sauf pour site (a
 # Longueur des chaînes de caractères
 Pourquoi limite 255 ? CSV pas limité en nb de caractères
 
+# source_nom
+Pour source_nom, éventuellement mettre le mode de remplissage :
+
+- saisie terrain
+- appli mobile
+- inventaire de friches
+- etc...
+
+Mettre dans les exemples.
+
+# site_nom
+Préciser que l'on peut juste mettre une description sommaire du site : ancienne décharge, carrière,...
+
 # Séparateurs pour valeurs multiples
 activite_code, activite_libelle
 séparateur virgule ? pourquoi pas plutôt ; ou |
@@ -56,18 +97,3 @@ séparateur virgule ? pourquoi pas plutôt ; ou |
 Exemple de séparateur | 
 
 	"pattern":"(?:(?:^|\\|)(Electrique|Gaz Naturel pour Véhicules|Hydrogène))+$"
-
-# A faire
-- [ ] Alléger le nb de champs
-- [ ] Réordonner les champs
-- [x] Faire carte mentale
-- [x] vérifier JSON
-- [ ] exemples avec des simples quotes
-- [x] Booléens
-- [ ] markdowns
-- [ ] spécifier N/C si pas possible d'identifier
-- [ ] Obligatoire / facultatif
-- [ ] enlever le point à la fin
-- [ ] Remplir les exemples
-- [ ] Créer fichier valide CSV
-- [ ] Mettre les infos annexes du schéma

@@ -1,0 +1,81 @@
+---
+title: "Analyse du schéma"
+output: html_notebook
+---
+
+```{r}
+library(jsonlite)
+library(tidyverse)
+```
+
+Lecture du schéma
+```{r}
+s <- jsonlite::read_json("../../schema.json")
+```
+
+```{r}
+length(s$fields)
+```
+Le schéma comprend 39 champs
+
+Les noms de champs sont les suivants :
+```{r}
+field_names <- sapply(s$fields, function(elt) elt$name) %>% sort
+field_names
+```
+
+Les familles de champs sont les suivantes :
+```{r}
+gsub("^([a-z]+)_.*$", "\\1", field_names) %>% unique
+```
+
+
+Les champs obligatoires sont les suivants :
+```{r}
+w <- sapply(s$fields, function(elt) elt$constraints$required) %>% which
+fields_required <- s$fields[w]
+print(sapply(fields_required, function(elt) elt$name))
+```
+Les champs suivants pourraient être mis en facultatif :
+- comm_nom
+- comm_insee
+- adresse
+- tup_surface
+- tup_refcad
+- prop_actuel_nom
+
+comm_nom, adresse, comm_insee sont retrouvables pgrâce aux coordonnées
+
+tup_refcad, tup_surface peuvent aussi être mis en facultatif car la géométrie est facultative
+
+Les seuls champs obligatoires seraient donc :
+
+2. longitude
+3. latitude
+
+
+Eventuellement :
+
+1. site_nom (discutable, description possible du site)
+4. source_nom (discutable, peut être le mode de remplissage : saisie terrain, etc...)
+
+Champs à supprimer :
+```{r}
+field_titles <- 
+field_descriptions <- 
+df <- data.frame(nom = sapply(s$fields, function(elt) elt$name), 
+                 titre = sapply(s$fields, function(elt) elt$title),
+                 description = sapply(s$fields, function(elt) elt$description),
+                 required = sapply(s$fields, function(elt) elt$constraints$required),
+                 action = "")
+readODS::write_ods(df, "outputs/champs-0.ods")
+```
+
+Fichier à éditer manuellement :
+```{r}
+file.copy("outputs/champs-0.ods", "outputs/champs-1.ods", overwrite = T)
+```
+
+
+
+

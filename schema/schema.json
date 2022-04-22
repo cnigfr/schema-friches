@@ -156,7 +156,7 @@
       {
          "name":"site_url",
          "title":"URL de la fiche",
-         "description":"URL de mla fiche BASOL ou BASIAS.",
+         "description":"URL de la fiche BASOL ou BASIAS.",
          "type":"string",
          "format":"uri",
          "example":"xxx",

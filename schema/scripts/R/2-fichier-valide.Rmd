@@ -1,0 +1,41 @@
+---
+title: "Création du fichier valide"
+output: html_notebook
+---
+
+```{r}
+library(readODS)
+```
+
+```{r}
+f <- read_ods("data/fichier-valide.ods")
+```
+
+```{r}
+out <- vector(mode="list")
+for(i in 1:nrow(f)) {
+  row <- f[i, ]
+  regex <- "^((?:[a-z]|_)*)\\s(.*)$"
+  nom <- gsub(regex, "\\1", row)
+  valeur <- gsub(regex, "\\2", row)
+  df <- data.frame(nom, valeur)
+  out[[i]] <- df
+}
+res <- do.call(rbind, out)
+res2 <- t(res) %>% data.frame
+names(res2) <- res2[1, ]
+res2 <- res2[2, ]
+# col_names <- names(res2)[order(names(res2))]
+# res2 <- res2[, col_names]
+write.csv(res2, "outputs/fichier-valide-0.csv", row.names = F, col.names = F, fileEncoding = "UTF-8")
+```
+
+
+```{r}
+file.copy("outputs/fichier-valide-0.csv", "../../fichier-valide.csv", overwrite = T)
+```
+
+/édition manuelle de fichier-valide.csv/
+
+
+
