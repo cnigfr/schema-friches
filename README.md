@@ -21,7 +21,7 @@ le groupe de travail dispose d'une **[page dédiée](http://cnig.gouv.fr/?page_i
 * Le répertoire [réunions](https://github.com/cnigfr/Friches/tree/main/r%C3%A9unions) contient les documents de suivi du groupe de travail : présentations et compte-rendus des réunions du groupe.
 
 * Le répertoire [standard](https://github.com/cnigfr/Friches/tree/main/standard) contient le standard Friches en cours d'élaboration, sous **forme littérale** (.odt et/ou .pdf) avec toutes les rubriques documentaires connexes (contexte, recommandations, métadonnées, etc.)
-* Le répertoire schema contient **l'implémentation technique** du modèle conceptuel de données (MCD), au format tableschema ou {json} ou XML ? (cela reste à déterminer...) destiné à être référencé sur schema.data.gouv.fr
+* Le répertoire [schema](https://github.com/cnigfr/Friches/tree/main/schema) contient **l'implémentation technique** du modèle conceptuel de données (MCD), au format json destiné à être référencé sur schema.data.gouv.fr
 
 
 ## Informations et particpation au groupe de travail
