@@ -13,8 +13,8 @@
    ],
    "countryCode":"FR",
    "homepage":"https://github.com/cnigfr/Friches",
-   "path":"https://github.com/CEREMA/schema-arrete-circulation-marchandises/raw/v0.8.0/schema.json/xxx",
-   "image":"https://raw.githubusercontent.com/CEREMA/schema-arrete-circulation-marchandises/v0.8.0/files/image.png/xxx",
+   "path":"https://raw.githubusercontent.com/cnigfr/Friches/main/schema/schema.json",
+   "image":"https://raw.githubusercontent.com/cnigfr/Friches/main/schema/image.jpg",
    "licenses":[
       {
          "title":"Etalab Licence Ouverte 2.0",
@@ -26,13 +26,13 @@
       {
          "title":"Fichier valide",
          "name":"exemple-valide-csv",
-         "path":"https://raw.githubusercontent.com/CEREMA/schema-arrete-circulation-marchandises/v0.8.0/exemple-valide.csv/xxx"
+         "path":"https://raw.githubusercontent.com/cnigfr/Friches/main/schema/fichier-valide.csv"
       }
    ],
    "sources":[
       {
          "title":"Standard CNIG Friches",
-         "path":"https://github.com/CEREMA/schema-arrete-permanent-circulation/blob/v0.8.0/ressources/fiche_technique_arrete_de_circulation_cle27195e-1.pdf"
+         "path":"https://github.com/cnigfr/Friches/blob/main/standard/220426_Projet%20de%20Standard_CNIG_Friches_v2022-04_commentaires_reluMR.pdf"
       }
    ],
    "created":"2022-04-22",
@@ -63,7 +63,7 @@
          "name":"site_numero",
          "title":"Identifiant du site",
          "description":"Il est créé à partir de l’identifiant de la base.",
-         "example":"xxx-xxx",
+         "example":"OBSLOC12_12083_01",
          "type":"string",
          "constraints":{
             "required":true,
@@ -116,7 +116,7 @@
          "title":"Adresse du site",
          "description":"Adresse du site.",
          "type":"string",
-         "example":"xxx",
+         "example":"875 route de Pierrefond",
          "constraints":{
             "pattern":"^[a-zA-Z0-9\\-\\'\\s\\d\\u00C0-\\u00FF]+$",
             "required":true
@@ -127,7 +127,7 @@
          "title":"Commune (nom)",
          "description":"Nom de la commune",
          "type":"string",
-         "example":"xxx",
+         "example":"CRANSAC",
          "constraints":{
             "required":true,
             "pattern":"^[A-Za-z\\s\\-\\u00C0-\\u00FF]+$"
@@ -138,7 +138,7 @@
          "title":"Commune (code INSEE)",
          "description":"Code INSEE de la commune.",
          "type":"string",
-         "example":"xxx",
+         "example":"12083",
          "constraints":{
             "required":true
          }
@@ -148,7 +148,7 @@
          "title":"Nom du site",
          "description":"Nom du site. Son nom usuel en absence de nom officie",
          "type":"string",
-         "example":"xxx",
+         "example":"Centre médical thermal",
          "constraints":{
             "required":true
          }
@@ -159,7 +159,7 @@
          "description":"URL de la fiche BASOL ou BASIAS.",
          "type":"string",
          "format":"uri",
-         "example":"xxx",
+         "example":"http://fiches-risques.brgm.fr/georisques/basias-detaillee/AQI4008059",
          "constraints":{
             "required":false
          }
@@ -179,7 +179,7 @@
          "title":"Zonage d'urbanisme (type)",
          "description":"Type du zonage d'urbanisme. Référentiel TYPEZONE : http://cnig.gouv.fr/?page_id=2732",
          "type":"string",
-         "example":"xxx",
+         "example":"N",
          "constraints":{
             "required":false,
             "enum":[
@@ -196,7 +196,7 @@
          "title":"Zonage d'urbanisme (libellé)",
          "description":"Libellé du zonage d'urbanisme. Référentiel LIBELLE http://cnig.gouv.fr/?page_id=2732",
          "type":"string",
-         "example":"Poids lourds|Véhicules utilitaires légers",
+         "example":"Np",
          "constraints":{
             "required":false,
             "enum":[
@@ -210,7 +210,7 @@
          "title":"Zonage d'urbanisme (destination dominante)",
          "description":"Destination dominante du zonage d'urbanisme",
          "type":"string",
-         "example":"xxx",
+         "example":"08",
          "constraints":{
             "required":false,
             "enum":[
@@ -225,7 +225,7 @@
          "description":"Date d’approbation du document d'urbanisme",
          "type":"date",
          "format":"%Y-%m-%d",
-         "example":"xxx",
+         "example":"2017-12-15",
          "constraints":{
             "required":false
          }
@@ -234,7 +234,7 @@
          "name":"urba_doc_type",
          "title":"Type du document d'urbanisme",
          "description":"Type du document d'urbanisme",
-         "example":"CC",
+         "example":"PLUI",
          "type":"string",
          "constraints":{
             "required":false,
@@ -254,7 +254,7 @@
          "description":"Année où la pollution a été constatée",
          "type":"date",
          "format":"%Y",
-         "example":"1989",
+         "example":"1996",
          "constraints":{
             "required":false
          }
@@ -289,7 +289,7 @@
          "name":"pollution_existe",
          "title":"Existence de la pollution",
          "description":"Existence de la pollution",
-         "example":"01",
+         "example":"03",
          "type":"string",
          "constraints":{
             "required":false,
@@ -327,7 +327,7 @@
          "description":"Lien vers la fiche de dépollution si elle est présente dans BASOL",
          "type":"string",
          "format":"uri",
-         "example":"xxx",
+         "example":"https://fiches-risques.brgm.fr/georisques/infosols/instruction/basol?page=xx",
          "constraints":{
             "required":false
          }
@@ -336,7 +336,7 @@
          "name":"pollution_origine",
          "title":"Origine de la pollution",
          "description":"Origine de la pollution.",
-         "example":"xxx",
+         "example":"Pollution due au fonctionnement de l'installation",
          "type":"string",
          "constraints":{
             "required":false,
@@ -353,17 +353,26 @@
          "name":"type_sol",
          "title":"Type de sol",
          "description":"Type de sol",
-         "example":"xxx",
+         "example":"03",
          "type":"string",
          "constraints":{
-            "required":false
+            "required":false,
+            "enum":[
+               "01",
+               "02",
+               "03",
+               "04",
+               "05",
+               "06",
+               "98"
+            ]
          }
       },
       {
          "name":"mutation_acte_date",
          "title":"Date de l'acte de mutation",
          "description":"Date de l'acte de mutation (date de dernière vente de la parcelle)",
-         "example":"xxx",
+         "example":"19990213",
          "type":"date",
          "format":"%Y-%m-%d",
          "constraints":{
@@ -374,7 +383,7 @@
          "name":"bati_nombre",
          "title":"Nombre de bâtiments",
          "description":"Nombre de bâtiments sur l'unité foncière",
-         "example":"3",
+         "example":"2",
          "type":"number",
          "constraints":{
             "required":false
@@ -386,7 +395,7 @@
          "description":"Année de construction du local le plus ancien",
          "type":"date",
          "format":"%Y",
-         "example":"1989",
+         "example":"1976",
          "constraints":{
             "required":false
          }
@@ -397,7 +406,7 @@
          "description":"Année de construction du local le plus récent",
          "type":"date",
          "format":"%Y",
-         "example":"1998",
+         "example":"1987",
          "constraints":{
             "required":false
          }
@@ -407,7 +416,23 @@
          "title":"Existence d'un projet",
          "description":"L’existence d’un projet sur le site est une information locale, et est présente si elle est transmise par le producteur. Pour les données issues d’appels à projets, il est considéré par défaut qu’il existe un projet sur le site.",
          "type":"boolean",
-         "example":"xxx",
+         "trueValues":[
+            "oui",
+            "Oui",
+            "true",
+            "True",
+            "TRUE",
+            "1"
+         ],
+         "falseValues":[
+            "non",
+            "Non",
+            "false",
+            "False",
+            "FALSE",
+            "0"
+         ],
+         "example":"true",
          "constraints":{
             "required":false
          }
@@ -417,7 +442,7 @@
          "title":"Nom de l'ancien propriétaire",
          "description":"Nom de l'ancien propriétaire",
          "type":"string",
-         "example":"Mairie d'Aix-en-Provence",
+         "example":"SA TERRILS",
          "constraints":{
             "required":false
          }
@@ -427,7 +452,7 @@
          "title":"Type de l'ancien propriétaire",
          "description":"Type de l'ancien propriétaire",
          "type":"string",
-         "example":"Personne morale",
+         "example":"Organisme national parapublic ou son représentant",
          "constraints":{
             "required":false
          }
@@ -437,7 +462,7 @@
          "title":"Nom du propriétaire actuel",
          "description":"Nom du propriétaire actuel",
          "type":"string",
-         "example":"_X_",
+         "example":"'COMMUNE DE CRANSAC', '_X_'",
          "constraints":{
             "required":true
          }
@@ -447,7 +472,7 @@
          "title":"Type du propriétaire actuel",
          "description":"Type du propriétaire actuel",
          "type":"string",
-         "example":"Personne morale",
+         "example":"P5a,X1a",
          "constraints":{
             "required":false
          }
@@ -466,7 +491,7 @@
          "name":"source_url",
          "title":"URL de la source",
          "description":"URL de la source de l'information, par exemple celui du site web d'un observatoire de friches",
-         "example":"xxx",
+         "example":"https://www.ecologie.gouv.fr/recyclage-des-friches-441-laureats-des-appels-projets-devoiles",
          "type":"string",
          "format":"uri",
          "constraints":{
@@ -488,7 +513,7 @@
          "title":"Adresse mail du contact",
          "description":"adresse mail de la structure ayant fourni l'information sur le site",
          "type":"string",
-         "example":"'Région', 'DDT des Ardennes', 'Appel à projet Fonds Friches'",
+         "example":"fondfriche@ecologie.gouv.fr",
          "constraints":{
             "required":false
          }
@@ -518,7 +543,7 @@
          "title":"Géométrie du site",
          "description":"Géométrie du périmètre du site au format WKT ([Well_Known-Text](https://fr.wikipedia.org/wiki/Well-known_text)",
          "type":"string",
-         "example":"xxx",
+         "example":"MultiPolygon (((9.4602223 42.2437539, 9.4603196 42.2437066, 9.4606186 42.2435602, 9.460645 42.2435471, 9.460656 42.2435531, 9.460688 42.2435706, 9.4607963 42.243632, 9.4608884 42.2436898, 9.4610507 42.2437918, 9.4611339 42.2438595, 9.4612078 42.2439226, 9.4612934 42.2440005, 9.4613819 42.2441029, 9.461459 42.2442001, 9.4615263 42.2442861, 9.4615681 42.2443359, 9.4616487 42.2444189, 9.461709 42.2444833, 9.4617654 42.2445353, 9.461838 42.244595, 9.4619574 42.2446827, 9.4621071 42.2447899, 9.4622345 42.2448858, 9.4620281 42.2449646, 9.4615316 42.2451648, 9.461026 42.2453779, 9.4608871 42.2451028, 9.4605957 42.244526, 9.4602223 42.2437539)))",
          "constraints":{
             "required":false
          }
