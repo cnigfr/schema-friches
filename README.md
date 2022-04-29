@@ -1,6 +1,8 @@
 # Github du GT CNIG Friches
 Dépot des documents et travaux du [Groupe de travail](http://cnig.gouv.fr/?page_id=26033) pour l'élaboration du géostandard CNIG Friches
 
+![220429_illustration_standard](https://github.com/cnigfr/Friches/blob/main/documentation/images/220429_illustration_standard.png)
+
 ## Présentation 
 Le GT CNIG Friches a pour objectif de standardiser l'identification et la caractérisation des friches définies par [la section 8 de l'Art. L. 111-26](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043965974/2021-10-06) du code de l'urbanisme comme _« tout bien ou droit immobilier, bâti ou non bâti, inutilisé et dont l'état, la configuration ou l'occupation totale ou partielle ne permet pas un réemploi sans un aménagement ou des travaux préalables »_, afin d'en constituer l'inventaire et faciliter leur réutilisation.
 
