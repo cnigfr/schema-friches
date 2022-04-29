@@ -42,6 +42,13 @@ Pour contacter le GT CNIG Friches, n’hésitez pas à nous écrire à l’adres
 
 ![Contactmail](https://github.com/cnigfr/Friches/blob/main/documentation/images/adresse_mail_cnig.png)
 
+## OpenData - Données ouvertes
+
+Les données relatives à l'identification et la caractérisation des friches sont ouvertes et sont à la disposition de tous.
+
+Elles sont publiées sur la plateforme nationale **[Cartofriches](https://cartofriches.cerema.fr/cartofriches/)** et prochainement sur https://www.data.gouv.fr
+
+
 ## Licence
 Les travaux du GT CNIG Friches sont réalisés sous [Licence Ouverte Etalab 2.0](https://www.etalab.gouv.fr/licence-ouverte-open-licence/)
 
