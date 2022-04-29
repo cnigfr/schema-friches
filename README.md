@@ -34,6 +34,8 @@ N'hésitez pas à utiliser les [Issues de ce Github](https://github.com/cnigfr/F
 
 Pour contacter le groupe de travail en charge de l’élaboration et de l’utilisation de ce schéma (GT CNIG Friches), n’hésitez pas à nous écrire à l’adresse suivante. Toutes les contributions sont les bienvenues !
 
+![Contactmail](https://github.com/cnigfr/Friches/blob/main/documentation/images/adresse_mail_cnig.png)
+
 ## Licence
 Les travaux du GT CNIG Friches sont réalisés sous [Licence Ouverte Etalab 2.0](https://www.etalab.gouv.fr/licence-ouverte-open-licence/)
 
