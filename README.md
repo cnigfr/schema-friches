@@ -2,14 +2,20 @@
 Dépot des documents et travaux du groupe de travail pour l'élaboration du géostandard CNIG Friches
 
 ## Présentation 
-Le GT CNIG Friches a pour objectif de standardiser l'identification et la caractérisation des friches
-afin d'en constituer l'inventaire et faciliter leur réutilisation.    
+Le GT CNIG Friches a pour objectif de standardiser l'identification et la caractérisation des friches définies par [la section 8 de l'Art. L. 111-26](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043965974/2021-10-06) du code de l'urbanisme comme _« tout bien ou droit immobilier, bâti ou non bâti, inutilisé et dont l'état, la configuration ou l'occupation totale ou partielle ne permet pas un réemploi sans un aménagement ou des travaux préalables »_, afin d'en constituer l'inventaire et faciliter leur réutilisation.
 
-Il oeuvre sous mandat de la **[Commission des Standards](http://cnig.gouv.fr/?page_id=640) du Conseil National de l'Information Géolocalisée** (CNIG).
+Il s'agit le plus souvent de **friches d'origines industrielles, commerciales, habitat, ou autres espaces désaffectés.**
+
+Le GT CNIG Friches oeuvre sous mandat de la **[Commission des Standards](http://cnig.gouv.fr/?page_id=640) du Conseil National de l'Information Géolocalisée** (CNIG).
 
 Le **[mandat du Groupe de Travail](http://cnig.gouv.fr/wp-content/uploads/2022/03/220310_mandat_GT_CNIG_Friches.pdf)** a été validé le 10 mars 2022.
 
-le groupe de travail dispose d'une **[page dédiée](http://cnig.gouv.fr/?page_id=26033)** sur le site du CNIG.
+Le groupe de travail dispose d'une **[page dédiée](http://cnig.gouv.fr/?page_id=26033)** sur le site du CNIG.
+
+## Schéma Friches (ou : Modèle conceptuel de données Friches)
+Ce schéma modélise les informations relatives aux friches. Adopter et respecter ce schéma est une garantie, non seulement d’efficacité et de pertinence des informations collectées, mais aussi d’interopérabilité et de facilité du partage des données.
+
+Le répertoire [schema](https://github.com/cnigfr/Friches/tree/main/schema) contient **l'implémentation technique** du modèle conceptuel de données (MCD), au format json destiné à être référencé sur schema.data.gouv.fr.
 
 ## Organisation du dépot
 
@@ -23,6 +29,10 @@ Pour être tenu au courant et/ou participer aux échanges du GT CNIG Friches, me
 
 ## Contributions
 N'hésitez pas à utiliser les [Issues de ce Github](https://github.com/cnigfr/Friches/issues) pour toute expression de besoin, proposition d'amélioration du projet de standard Friches, retour utilisateur, etc.
+
+## Nous contacter
+
+Pour contacter le groupe de travail en charge de l’élaboration et de l’utilisation de ce schéma (GT CNIG Friches), n’hésitez pas à nous écrire à l’adresse suivante. Toutes les contributions sont les bienvenues !
 
 ## Licence
 Les travaux du GT CNIG Friches sont réalisés sous [Licence Ouverte Etalab 2.0](https://www.etalab.gouv.fr/licence-ouverte-open-licence/)
