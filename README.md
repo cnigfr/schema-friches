@@ -27,6 +27,12 @@ Le répertoire [schema](https://github.com/cnigfr/Friches/tree/main/schema) cont
 ## Informations et participation au groupe de travail
 Pour être tenu au courant et/ou participer aux échanges du GT CNIG Friches, merci de [contacter le CNIG](http://cnig.gouv.fr/?page_id=609). Il est également possible de s'abonner à la [lettre d'information du CNIG](http://cnig.gouv.fr/).
 
+## Mises à jour
+Le projet de standard Friches, puis le standard une fois validé par le CNIG, évoluera en fonction des évolutions réglementaires et de l'expression des besoins des communautés d'utlisateur.
+
+Les ressources associées et la base de données correpondante seront actualisées conformément au standard CNIG Friches.
+Les mises à jour de base de données sont effectuées en modifiant le cas échéant les données qui y figurent déjà.
+
 ## Contributions
 N'hésitez pas à utiliser les [Issues de ce Github](https://github.com/cnigfr/Friches/issues) pour toute expression de besoin, proposition d'amélioration du projet de standard Friches, retour utilisateur, etc.
 
