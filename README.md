@@ -12,7 +12,7 @@ Dépot des documents et travaux du [Groupe de travail](http://cnig.gouv.fr/?page
 - [Organisation du dépot](https://github.com/cnigfr/Friches/edit/main/README.md#organisation-du-dépot)
 - [Informations et participation au groupe de travail](https://github.com/cnigfr/Friches/edit/main/README.md#informations-et-participation-au-groupe-de-travail)
 - [Contributions](https://github.com/cnigfr/Friches/edit/main/README.md#contributions)
-- [Mises à jour](https://github.com/cnigfr/Friches/edit/main/README.md#mises-à-jour)
+- [Mises à jour](https://github.com/cnigfr/Friches/edit/main/README.md#actualisation)
 - [OpenData - Données ouvertes](https://github.com/cnigfr/Friches/edit/main/README.md#opendata---données-ouvertes)
 - [Nous contacter](https://github.com/cnigfr/Friches/edit/main/README.md#nous-contacter)
 - [Licence](https://github.com/cnigfr/Friches/edit/main/README.md#licence)
@@ -64,7 +64,7 @@ Pour être tenu au courant et/ou participer aux échanges du GT CNIG Friches, me
 ## Contributions
 N'hésitez pas à utiliser les [Issues de ce Github](https://github.com/cnigfr/Friches/issues) pour toute expression de besoin, proposition d'amélioration du projet de standard Friches, retour utilisateur, etc.
 
-## Mises à jour
+## Actualisation
 Le projet de standard Friches, puis le standard une fois validé par le CNIG, évoluera en fonction des évolutions réglementaires et de l'expression des besoins des communautés d'utlisateur.
 
 Les ressources associées et la base de données correpondante seront actualisées conformément au standard CNIG Friches.
