@@ -5,17 +5,17 @@ Dépot des documents et travaux du [Groupe de travail](http://cnig.gouv.fr/?page
 
 ## Table des matières
 
-Contexte
-Cadre juridique
-Finalité
-Schéma Friches
-Organisation du dépot
-Informations et participation au groupe de travail
-Contributions
-Mises à jour
-OpenData - Données ouvertes
-Nous contacter
-Licence
+- [Contexte](https://github.com/cnigfr/Friches/edit/main/README.md#contexte)
+- [Cadre juridique](https://github.com/cnigfr/Friches/edit/main/README.md#cadre-juridique)
+- [Finalité](https://github.com/cnigfr/Friches/edit/main/README.md#finalite)
+- [Schéma Friches](https://github.com/cnigfr/Friches/edit/main/README.md#schema-friches)
+- [Organisation du dépot](https://github.com/cnigfr/Friches/edit/main/README.md#organisation-du-depot)
+- Informations et participation au groupe de travail
+- [Contributions](https://github.com/cnigfr/Friches/edit/main/README.md#contributions)
+- [Mises à jour](https://github.com/cnigfr/Friches/edit/main/README.md#mises-a-jour)
+- [OpenData - Données ouvertes](https://github.com/cnigfr/Friches/edit/main/README.md#opendata---donnees-ouvertes)
+- [Nous contacter](https://github.com/cnigfr/Friches/edit/main/README.md#nous-contacter)
+- [Licence](https://github.com/cnigfr/Friches/edit/main/README.md#licence)
 
 ## Contexte
 
