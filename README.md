@@ -3,7 +3,23 @@ Dépot des documents et travaux du [Groupe de travail](http://cnig.gouv.fr/?page
 
 <img src=https://github.com/cnigfr/Friches/blob/main/documentation/images/220429_illustration_standard.jpg width='72%' align=center>
 
-## Présentation 
+## Contexte
+
+La réhabilitation des friches constitue un enjeu majeur d’aménagement durable des territoires pour répondre aux objectifs croisés de :
+
+- revitalisation urbaine
+- maîtrise de l’étalement urbain et limitation de la consommation des espaces naturels, agricoles et forestiers
+- protection des sols contre leur artificialisation
+- promotion de la sobriété foncière dans une volonté de "zéro artificialisation nette" (ZAN).
+
+## Cadre juridique
+
+L’objectif de limiter l’artificialisation des sols introduit dans le **Plan Biodiversité de 2018** a été consolidé par la **Loi Climat et Résilience** (août 2021) qui ancre l’écologie dans notre société et impose de lutter contre le phénomène d'artificialisation des sols pour apporter une partie de réponse aux enjeux liés au changement climatique, avec des objectifs ciblés.
+
+- L'article 191 engage à réduire de moitié le rythme de consommation des espaces naturels, agricoles et forestiers (NAF) sur les dix prochaines années (2031), et d'atteindre l'objectif de "zéro artificialisation nette" (ZAN) en 2050.
+- L'article 194 (modifie les art. L. 151-5 et L. 161-3 CGCL) considère les friches comme des gisements fonciers à mobiliser en priorité. Elles sont à ce titre prises en compte dans la déclinaison des objectifs des documents de planification et d’urbanisme.
+
+## Finalité
 Le GT CNIG Friches a pour objectif de standardiser l'identification et la caractérisation des friches définies par [la section 8 de l'Art. L. 111-26](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043965974/2021-10-06) du code de l'urbanisme comme _« tout bien ou droit immobilier, bâti ou non bâti, inutilisé et dont l'état, la configuration ou l'occupation totale ou partielle ne permet pas un réemploi sans un aménagement ou des travaux préalables »_, afin d'en constituer l'inventaire et faciliter leur réutilisation.
 
 Il s'agit le plus souvent de **friches d'origines industrielles, commerciales, habitat, ou autres espaces désaffectés.**
