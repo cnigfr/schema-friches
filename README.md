@@ -66,7 +66,10 @@ Elles sont publiées sur la plateforme nationale **[Cartofriches](https://cartof
 
 Pour contacter le GT CNIG Friches, n’hésitez pas à nous écrire à l’adresse suivante. Toutes les contributions sont les bienvenues !
 
-![Contactmail](https://github.com/cnigfr/Friches/blob/main/documentation/images/adresse_mail_cnig.png)
+<p align="center">
+  <img src="https://github.com/cnigfr/Friches/blob/main/documentation/images/adresse_mail_cnig.png" />
+</p>
+
 
 ## Licence
 Les travaux du GT CNIG Friches sont réalisés sous [Licence Ouverte Etalab 2.0](https://www.etalab.gouv.fr/licence-ouverte-open-licence/)
