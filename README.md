@@ -65,7 +65,7 @@ Pour être tenu au courant et/ou participer aux échanges du GT CNIG Friches, me
 N'hésitez pas à utiliser les [Issues de ce Github](https://github.com/cnigfr/Friches/issues) pour toute expression de besoin, proposition d'amélioration du projet de standard Friches, retour utilisateur, etc.
 
 ## Actualisation
-Le projet de standard Friches, puis le standard une fois validé par le CNIG, évoluera en fonction des évolutions réglementaires et de l'expression des besoins des communautés d'utlisateur.
+Le projet de standard Friches, puis le standard une fois validé par le CNIG, évoluera en fonction des évolutions réglementaires et de l'expression des besoins des communautés d'utlisateurs.
 
 Les ressources associées et la base de données correpondante seront actualisées conformément au standard CNIG Friches.
 Les mises à jour de base de données sont effectuées en modifiant le cas échéant les données qui y figurent déjà.
