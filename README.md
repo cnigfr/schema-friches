@@ -3,6 +3,20 @@ Dépot des documents et travaux du [Groupe de travail](http://cnig.gouv.fr/?page
 
 <img src=https://github.com/cnigfr/Friches/blob/main/documentation/images/220429_illustration_standard.jpg width='72%' align=center>
 
+## Table des matières
+
+Contexte
+Cadre juridique
+Finalité
+Schéma Friches
+Organisation du dépot
+Informations et participation au groupe de travail
+Contributions
+Mises à jour
+OpenData - Données ouvertes
+Nous contacter
+Licence
+
 ## Contexte
 
 La réhabilitation des friches constitue un enjeu majeur d’aménagement durable des territoires pour répondre aux objectifs croisés de :
@@ -47,20 +61,14 @@ Le [projet de standard CNIG Friches](https://github.com/cnigfr/Friches/tree/main
 ## Informations et participation au groupe de travail
 Pour être tenu au courant et/ou participer aux échanges du GT CNIG Friches, merci de [contacter le CNIG](http://cnig.gouv.fr/?page_id=609). Il est également possible de s'abonner à la [lettre d'information du CNIG](http://cnig.gouv.fr/).
 
+## Contributions
+N'hésitez pas à utiliser les [Issues de ce Github](https://github.com/cnigfr/Friches/issues) pour toute expression de besoin, proposition d'amélioration du projet de standard Friches, retour utilisateur, etc.
+
 ## Mises à jour
 Le projet de standard Friches, puis le standard une fois validé par le CNIG, évoluera en fonction des évolutions réglementaires et de l'expression des besoins des communautés d'utlisateur.
 
 Les ressources associées et la base de données correpondante seront actualisées conformément au standard CNIG Friches.
 Les mises à jour de base de données sont effectuées en modifiant le cas échéant les données qui y figurent déjà.
-
-## Contributions
-N'hésitez pas à utiliser les [Issues de ce Github](https://github.com/cnigfr/Friches/issues) pour toute expression de besoin, proposition d'amélioration du projet de standard Friches, retour utilisateur, etc.
-
-## Nous contacter
-
-Pour contacter le GT CNIG Friches, n’hésitez pas à nous écrire à l’adresse suivante. Toutes les contributions sont les bienvenues !
-
-![Contactmail](https://github.com/cnigfr/Friches/blob/main/documentation/images/adresse_mail_cnig.png)
 
 ## OpenData - Données ouvertes
 
@@ -68,6 +76,11 @@ Les données relatives à l'identification et la caractérisation des friches so
 
 Elles sont publiées sur la plateforme nationale **[Cartofriches](https://cartofriches.cerema.fr/cartofriches/)** et prochainement sur https://www.data.gouv.fr
 
+## Nous contacter
+
+Pour contacter le GT CNIG Friches, n’hésitez pas à nous écrire à l’adresse suivante. Toutes les contributions sont les bienvenues !
+
+![Contactmail](https://github.com/cnigfr/Friches/blob/main/documentation/images/adresse_mail_cnig.png)
 
 ## Licence
 Les travaux du GT CNIG Friches sont réalisés sous [Licence Ouverte Etalab 2.0](https://www.etalab.gouv.fr/licence-ouverte-open-licence/)
