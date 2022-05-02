@@ -3,20 +3,6 @@ Dépot des documents et travaux du [Groupe de travail](http://cnig.gouv.fr/?page
 
 <img src=https://github.com/cnigfr/Friches/blob/main/documentation/images/220429_illustration_standard.jpg width='72%' align=center>
 
-## Table des matières
-
-- [Contexte](https://github.com/cnigfr/Friches/edit/main/README.md#contexte)
-- [Cadre juridique](https://github.com/cnigfr/Friches/edit/main/README.md#cadre-juridique)
-- [Finalité](https://github.com/cnigfr/Friches/edit/main/README.md#finalité)
-- [Schéma Friches](https://github.com/cnigfr/Friches/edit/main/README.md#schéma-friches)
-- [Organisation du dépot](https://github.com/cnigfr/Friches/edit/main/README.md#organisation-du-dépot)
-- [Informations et participation au groupe de travail](https://github.com/cnigfr/Friches/edit/main/README.md#informations-et-participation-au-groupe-de-travail)
-- [Contributions](https://github.com/cnigfr/Friches/edit/main/README.md#contributions)
-- [Actualisation](https://github.com/cnigfr/Friches/edit/main/README.md#actualisation)
-- [OpenData - Données ouvertes](https://github.com/cnigfr/Friches/edit/main/README.md#opendata---données-ouvertes)
-- [Nous contacter](https://github.com/cnigfr/Friches/edit/main/README.md#nous-contacter)
-- [Licence](https://github.com/cnigfr/Friches/edit/main/README.md#licence)
-
 ## Contexte
 
 La réhabilitation des friches constitue un enjeu majeur d’aménagement durable des territoires pour répondre aux objectifs croisés de :
