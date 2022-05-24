@@ -41,7 +41,7 @@ Ce schéma (ou Modèle Conceptuel de Donées - MCD) modélise les informations r
 ## Organisation du dépot
 
 * Le répertoire [documentation](https://github.com/cnigfr/Friches/tree/main/documentation) contient les documents utiles au groupe de travail.
-* Le répertoire [réunions](https://github.com/cnigfr/Friches/tree/main/r%C3%A9unions) contient les documents de suivi du groupe de travail : **présentations et compte-rendus des réunions du groupe**.
+* Le répertoire [réunions](https://github.com/cnigfr/Friches/tree/main/r%C3%A9unions) contient les documents de suivi du groupe de travail : [**présentations et compte-rendus des réunions du groupe**](https://github.com/cnigfr/Friches/blob/main/r%C3%A9unions/README.md).
 * Le répertoire [standard](https://github.com/cnigfr/Friches/tree/main/standard) contient le standard Friches en cours d'élaboration, sous **forme littérale** (.odt et/ou .pdf) avec les rubriques documentaires connexes (contexte, recommandations, métadonnées, etc.)
 * Le répertoire [schema](https://github.com/cnigfr/Friches/tree/main/schema) contient **l'implémentation technique** du modèle conceptuel de données (MCD), au format json destiné à être référencé sur schema.data.gouv.fr. Ce MCD est (automatiquement) documenté [ici avec le détail du MCD](https://github.com/datagistips/Friches/blob/main/schema/documentation/schema-table.md) et [ici de façon simplifiée avec des exemples](https://github.com/datagistips/Friches/blob/main/schema/documentation/schema-page.md).
 
