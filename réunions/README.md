@@ -13,6 +13,8 @@
 
 [Retour d'expérience de l'EPF Normandie sur le recensement des friches](https://github.com/cnigfr/Friches/blob/main/r%C3%A9unions/220517_Presentation_EPF_Normandie_CNIG_20220517.pdf)
 
+**[Compte-rendu de réunion du 17 mai 2022](https://github.com/cnigfr/Friches/blob/main/r%C3%A9unions/220520_CR_GT_FRICHES_CNIG_220517.pdf)**
+
 
 
 
