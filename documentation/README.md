@@ -10,4 +10,6 @@ Plateforme nationale [Cartofriches](https://cartofriches.cerema.fr/cartofriches/
 
 [Laboratoire d’innovations foncières et territoriales innovantes](https://lifti.org/) (LIFTI)
 
+[Observatoire NAFU Nouvelle-Aquitaine : Espaces Susceptibles d'être des Friches Urbanisées (ESFU)](https://github.com/cnigfr/Friches/tree/main/documentation/Observatoire%20NAFU%20Nouvelle-Aquitaine)
+
 [data.gouv.fr](https://www.data.gouv.fr/fr/) plateforme de diffusion de données publiques de l'État français
