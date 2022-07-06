@@ -17,10 +17,10 @@
 
 ## 220517 Réunion n°3
 
-Présentation conductrice
+[Présentation conductrice](https://github.com/cnigfr/Friches/blob/main/r%C3%A9unions/220704_Presa_GT_CNIG_Friches_220705.pdf)
 
-Présentation de Dataviz Territoires d'industrie
+[Présentation de Dataviz Territoires d'industrie](https://github.com/cnigfr/Friches/blob/main/r%C3%A9unions/220701_Dataviz_TI_juin22vf.pdf)
 
-Retour d'expérience NAFU - Espaces susceptibles d'êtres des friches urbanisées (ESFU)
+[Retour d'expérience NAFU - Espaces susceptibles d'êtres des friches urbanisées (ESFU)](https://github.com/cnigfr/Friches/blob/main/r%C3%A9unions/220705_RETEX_NAFU_ESFU.pdf)
 
 
