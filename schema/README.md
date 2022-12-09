@@ -4,8 +4,8 @@
 
 Ici est décrite **l'implémentation technique** du modèle conceptuel de données (MCD), au standard Tableschema et au format {json} destiné à être référencée sur schema.data.gouv.fr
 
-- v2022-04 : [_version_2022-04_MR](_version_2022-04_MR)
-- v2022-08 : [schéma (JSON)](.)
+- v2022-04 : version initiale [2022-04_MR](_version_2022-04_MR)
+- v2022-12 : version actuelle [schéma (JSON)](.) conforme au standard CNIG Friches v2022-12
 
 
 
