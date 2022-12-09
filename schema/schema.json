@@ -1,8 +1,8 @@
 {
    "$schema":"https://specs.frictionlessdata.io/schemas/table-schema.json",
    "name":"schema-friches",
-   "title":"Friches urbanisées, industrielles, commerciales, etc.",
-   "description":"Spécification du fichier d'échange relatif aux friches urbanisées",
+   "title":"Standard CNIG Friches",
+   "description":"Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux friches urbanisées. Une friche \"urbanisée\" a connu une activité économique (industrielle, artisanale, logistique, commerciale, de loisir, tertiaire, agricole), un usage résidentiel ou un usage d'équipement. La définition règlementaire décrit \"tout bien ou droit immobilier, bâti ou non bâti, inutilisé et dont l'état, la configuration ou l'occupation totale ou partielle ne permet pas un réemploi sans un aménagement ou des travaux préalables\". En particulier, les friches dites \"agricoles\", au sens des espaces auparavant cultivés et qui se sont enfrichés, ne sont pas prises en compte dans le cadre de ce standard, au contraire des bâtis agricoles désaffectés.",
    "keywords":[
       "landuse",
       "brownfield",
@@ -37,8 +37,8 @@
       }
    ],
    "created":"2022-04-21",
-   "lastModified":"2022-09-27",
-   "version":"0.4.0",
+   "lastModified":"2022-12-09",
+   "version":"v2022-12",
    "contributors":[
       {
          "title":"GT CNIG Friches",
@@ -143,7 +143,7 @@
       {
          "name":"site_url",
          "title":"URL du site",
-         "description":"URL du site, ou de la fiche BASOL ou BASIAS",
+         "description":"URL(s) des fiches du site dans BASIAS et\/ou dans BASOL ou SIS et\/ou dans un observatoire local, lorsqu'elles existent",
          "example":"http:\/\/fiches-risques.brgm.fr\/georisques\/basias-detaillee\/AQI4008059",
          "type":"string",
          "format":"uri",
@@ -152,7 +152,7 @@
          }
       },
       {
-         "name":"site_url_ademe",
+         "name":"site_ademe_url",
          "title":"URL de la fiche de l’ADEME",
          "description":"URL de la fiche lorsque le site a fait l'objet d'une intervention de l'ADEME",
          "example":"https:\/\/data.ademe.fr\/data-fair\/api\/v1\/datasets\/srd-ademe\/attachments\/ILE%20DER_22218_28092020.pdf",
@@ -192,7 +192,8 @@
                "totalement inoccupé",
                "partiellement inoccupé",
                "occupation transitoire ou temporaire",
-               "occupation illicite"
+               "occupation illicite supposée",
+			   "occupation illicite avérée"
             ]
          }
       },
@@ -213,8 +214,8 @@
          }
       },
       {
-         "name":"site_projet",
-         "title":"site web du projet",
+         "name":"site_projet_url",
+         "title":"site web d'un éventuel projet sur le site",
          "description":"site web ou adresse mail institutionnelle du porteur de projet de reconversion, le cas échéant",
          "example":"www.reconvtafriche.fr\/site_tulipe\/laureat2021.html",
          "type":"string",
@@ -257,7 +258,7 @@
       {
          "name":"comm_nom",
          "title":"nom de la commune",
-         "description":"nom de la commune d'implantation du site",
+         "description":"nom de la commune principale d'implantation du site",
          "example":"CRANSAC",
          "type":"string",
          "constraints":{
@@ -267,7 +268,7 @@
       {
          "name":"comm_insee",
          "title":"code INSEE de la commune",
-         "description":"code INSEE de la commune d'implantation du site",
+         "description":"code INSEE de la commune principale d'implantation du site",
          "example":12083,
          "type":"string",
          "constraints":{
@@ -277,8 +278,8 @@
       {
          "name":"bati_type",
          "title":"type de bâtiments",
-         "description":"type de bâtiments présents dans le périmètre",
-         "example":"industriel",
+         "description":"type de bâtiments présents dans le périmètre de la friche",
+         "example":"secteur tertiaire|industriel",
          "type":"string",
          "constraints":{
             "required":false,
@@ -406,7 +407,7 @@
          "name":"proprio_personne",
          "title":"type de personne",
          "description":"indique s'il s'agit d'une personne physique ou morale",
-         "example":"personne morale",
+         "example":"personne morale|personne physique",
          "type":"string",
          "constraints":{
             "required":false,
@@ -419,8 +420,8 @@
       {
          "name":"proprio_nom",
          "title":"nom du propriétaire",
-         "description":"nom du propriétaire actuel dans les fichiers fonciers, uniquement s'il s'agit d'une personne morale",
-         "example":"COMMUNE DE CRANSAC",
+         "description":"nom des propriétaires actuels dans les fichiers fonciers, uniquement s'il s'agit de personnes morales",
+         "example":"Commune de Cransac",
          "type":"string",
          "constraints":{
             "required":false
@@ -429,7 +430,7 @@
       {
          "name":"sol_pollution_annee",
          "title":"année de la pollution du sol",
-         "description":"année de constatation de la pollution du sol dans BASOL",
+         "description":"année de constatation de la pollution du sol dans BASOL, SIS, ou autre source de données",
          "example":1996,
          "type":"date",
          "format":"%Y",
@@ -447,6 +448,7 @@
             "required":false,
             "enum":[
                "pollution inexistante",
+			   "pollution traitée",
                "pollution peu probable",
                "pollution supposée",
                "pollution avérée"
@@ -482,7 +484,7 @@
       {
          "name":"sol_depollution_fiche",
          "title":"fiche de dépollution",
-         "description":"URL de la fiche de dépollution si elle est présente dans BASOL",
+         "description":"Lien vers une fiche de gestion ou de traitement des pollutions dans BASOL, SIS, ou autre base de données",
          "example":"https:\/\/fiches-risques.brgm.fr\/georisques\/infosols\/instruction\/basol?page=xx",
          "type":"string",
          "format":"uri",
@@ -523,7 +525,11 @@
                "AUc",
                "AU",
                "A",
-               "N"
+               "N",
+			   "Zc",
+			   "ZCa",
+			   "ZnC",
+			   "RNU"
             ]
          }
       },
@@ -651,5 +657,5 @@
       "NaN",
       "N/A"
    ],
-   "primaryKey":"site_numero"
+   "primaryKey":"site_id"
 }
