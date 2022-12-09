@@ -1,5 +1,5 @@
 # Documentation du schéma
-La documentation du schéma des Friches suivant le modèle schema.data.gouv.fr conforme ai [standard CNIG Friches](https://github.com/cnigfr/Friches/tree/main/standard) comprend deux fichiers :
+La documentation du schéma des Friches suivant le modèle schema.data.gouv.fr conforme au [standard CNIG Friches](https://github.com/cnigfr/Friches/tree/main/standard) comprend deux fichiers :
 - [schema-page.md](https://github.com/cnigfr/Friches/blob/main/schema/documentation/schema-page.md)
 - [schema-table.md](https://github.com/cnigfr/Friches/blob/main/schema/documentation/schema-table.md)
 
