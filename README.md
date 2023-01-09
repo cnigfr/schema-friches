@@ -1,4 +1,4 @@
-# Github du GT CNIG Friches
+# Schema Friches issu du GT CNIG Friches
 Dépot des documents et travaux du [Groupe de travail](http://cnig.gouv.fr/?page_id=26033) pour l'élaboration du géostandard CNIG Friches
 
 <img src=https://github.com/cnigfr/Friches/blob/main/documentation/images/220429_illustration_standard.jpg width='72%' align=center>
