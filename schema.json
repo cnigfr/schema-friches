@@ -146,19 +146,20 @@
       {
          "name":"site_url",
          "title":"URL du site",
-         "description":"URL(s) des fiches du site dans BASIAS et\/ou dans BASOL ou SIS et\/ou dans un observatoire local, lorsqu'elles existent",
-         "example":"http:\/\/fiches-risques.brgm.fr\/georisques\/basias-detaillee\/AQI4008059",
+         "description":"URL(s) des fiches du site dans BASIAS et/ou dans BASOL ou SIS et/ou dans un observatoire local, lorsqu'elles existent",
+         "example":"http://fiches-risques.brgm.fr/georisques/basias-detaillee/AQI4008059",
          "type":"string",
          "format":"uri",
          "constraints":{
-            "required":false
+            "required":false,
+            "pattern":"(?:(?:^|\\|)(http[s]?:\/\/(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+|)\\1+http[s]?:\/\/(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+)+$"
          }
       },
       {
          "name":"site_ademe_url",
          "title":"URL de la fiche de l’ADEME",
          "description":"URL de la fiche lorsque le site a fait l'objet d'une intervention de l'ADEME",
-         "example":"https:\/\/data.ademe.fr\/data-fair\/api\/v1\/datasets\/srd-ademe\/attachments\/ILE%20DER_22218_28092020.pdf",
+         "example":"https://data.ademe.fr/data-fair/api/v1/datasets/srd-ademe/attachments/ILE%20DER_22218_28092020.pdf",
          "type":"string",
          "format":"uri",
          "constraints":{
@@ -199,10 +200,10 @@
                "partiellement inoccupé",
                "occupation transitoire ou temporaire",
                "occupation illicite supposée",
-			   "occupation illicite avérée",
-            "inconnu",
-            "autre",
-            "sans objet"
+               "occupation illicite avérée",
+               "inconnu",
+               "autre",
+               "sans objet"
             ]
          }
       },
@@ -253,7 +254,8 @@
          "example":"B05.10Z|V89.04Z",
          "type":"string",
          "constraints":{
-            "required":false
+            "required":false,
+            "pattern":"(?:(?:^|\\|)([A-Z]\\d\\d.\\d\\d[A-Z]|)\\1+[A-Z]\\d\\d.\\d\\d[A-Z])+$"
          }
       },
       {
@@ -291,19 +293,11 @@
          "name":"bati_type",
          "title":"type de bâtiments",
          "description":"type de bâtiments présents dans le périmètre de la friche",
-         "example":"secteur tertiaire",
+         "example":"secteur tertiaire|commercial",
          "type":"string",
          "constraints":{
             "required":false,
-            "enum":[
-               "industriel",
-               "commercial",
-               "résidentiel",
-               "secteur tertiaire",
-               "inconnu",
-               "autre",
-               "sans objet"
-            ]
+            "pattern": "(?:(?:^|\\|)(industriel|commercial|résidentiel|secteur tertiaire|inconnu|autre|sans objet))+$"
          }
       },
       {
@@ -427,7 +421,8 @@
          "example":"P4a|G1a|Z2b|G1a|M1a|G1a|R2a|R5a|X1a",
          "type":"string",
          "constraints":{
-            "required":false
+            "required":false,
+            "pattern":"(?:(?:^|\\|)([A-Z]\\d[a-z]|)\\1+[A-Z]\\d[a-z])+$"
          }
       },
       {
@@ -438,13 +433,7 @@
          "type":"string",
          "constraints":{
             "required":false,
-            "enum":[
-               "personne physique",
-               "personne morale",
-               "inconnu",
-               "autre",
-               "sans objet"
-            ]
+            "pattern": "(?:(?:^|\\|)(personne physique|personne morale|inconnu|autre|sans objet))+$"
          }
       },
       {
@@ -478,7 +467,7 @@
             "required":false,
             "enum":[
                "pollution inexistante",
-			   "pollution traitée",
+			      "pollution traitée",
                "pollution peu probable",
                "pollution supposée",
                "pollution avérée",
@@ -521,7 +510,7 @@
          "name":"sol_depollution_fiche",
          "title":"fiche de dépollution",
          "description":"Lien vers une fiche de gestion ou de traitement des pollutions dans BASOL, SIS, ou autre base de données",
-         "example":"https:\/\/fiches-risques.brgm.fr\/georisques\/infosols\/instruction\/basol?page=xx",
+         "example":"https://fiches-risques.brgm.fr/georisques/infosols/instruction/basol?page=xx",
          "type":"string",
          "format":"uri",
          "constraints":{
@@ -545,7 +534,8 @@
          "example":"12083000AH0035|12083000AH0072|12083000AH0279|12083000AH0367",
          "type":"string",
          "constraints":{
-            "required":false
+            "required":false,
+            "pattern":"(?:(?:^|\\|)(\\d{8}[A-Z]{2}\\d{4}|)\\1+\\d{8}[A-Z]{2}\\d{4})+$"
          }
       },
       {
@@ -562,13 +552,13 @@
                "AU",
                "A",
                "N",
-			   "Zc",
-			   "ZCa",
-			   "ZnC",
-			   "RNU",
-            "inconnu",
-            "autre",
-            "sans objet"
+               "Zc",
+               "ZCa",
+               "ZnC",
+               "RNU",
+               "inconnu",
+               "autre",
+               "sans objet"
             ]
          }
       },
@@ -619,7 +609,8 @@
          "example":"2|6|46",
          "type":"string",
          "constraints":{
-            "required":false
+            "required":false,
+            "pattern":"(?:(?:^|\\|)(\\d{1,}|)\\1+\\d{1,})+$"
          }
       },
       {
@@ -646,7 +637,7 @@
          "name":"source_url",
          "title":"URL de la source",
          "description":"URL de la source de l'information, par exemple celui du site web d'un observatoire de friches",
-         "example":"https:\/\/www.ecologie.gouv.fr\/recyclage-des-friches-441-laureats-des-appels-projets-devoiles",
+         "example":"https://www.ecologie.gouv.fr/recyclage-des-friches-441-laureats-des-appels-projets-devoiles",
          "type":"string",
          "constraints":{
             "required":false
@@ -685,7 +676,7 @@
       {
          "name":"geomsurf",
          "title":"géométrie surfacique",
-         "description":"géométrie du périmètre du site au format WKT ([Well_Known-Text](https:\/\/fr.wikipedia.org\/wiki\/Well-known_text)",
+         "description":"géométrie du périmètre du site au format WKT ([Well_Known-Text](https://fr.wikipedia.org/wiki/Well-known_text)",
          "example":"POLYGON((49.33 3.95, 49.38 3.89, 49.42 3.96, ...))",
          "type":"string",
          "constraints":{
