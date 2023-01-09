@@ -166,7 +166,7 @@
          "name":"site_securite",
          "title":"type de sécurisation",
          "description":"description du (des) type(s) de sécurisation selon l'article R512-75-1 al. IV code de l'environnement",
-         "example":"épandage de produits absorbants|gardiennage",
+         "example":"interdictions ou limitations d'accès au site",
          "type":"string",
          "constraints":{
             "required":false,
@@ -184,7 +184,7 @@
          "name":"site_occupation",
          "title":"occupation du site",
          "description":"description de l'occupation du site",
-         "example":"partiellement occupé",
+         "example":"partiellement inoccupé",
          "type":"string",
          "constraints":{
             "required":false,
@@ -217,7 +217,7 @@
          "name":"site_projet_url",
          "title":"site web d'un éventuel projet sur le site",
          "description":"site web ou adresse mail institutionnelle du porteur de projet de reconversion, le cas échéant",
-         "example":"www.reconvtafriche.fr\/site_tulipe\/laureat2021.html",
+         "example":"http://www.reconvtafriche.fr/site_tulipe/laureat2021.html",
          "type":"string",
          "format":"uri",
          "constraints":{
@@ -248,7 +248,7 @@
          "name":"activite_fin_annee",
          "title":"année de fin d'activité",
          "description":"année de fin d'activité, au format ISO 8601 AAAA",
-         "example":1989,
+         "example":"1989",
          "type":"date",
          "format":"%Y",
          "constraints":{
@@ -269,7 +269,7 @@
          "name":"comm_insee",
          "title":"code INSEE de la commune",
          "description":"code INSEE de la commune principale d'implantation du site",
-         "example":12083,
+         "example":"12083",
          "type":"string",
          "constraints":{
             "required":true
@@ -279,7 +279,7 @@
          "name":"bati_type",
          "title":"type de bâtiments",
          "description":"type de bâtiments présents dans le périmètre de la friche",
-         "example":"secteur tertiaire|industriel",
+         "example":"secteur tertiaire",
          "type":"string",
          "constraints":{
             "required":false,
@@ -321,7 +321,8 @@
             "required":false,
             "enum":[
                "amiante",
-               "plomb"
+               "plomb",
+               "inconnu"
             ]
          }
       },
@@ -375,7 +376,7 @@
          "name":"local_ancien_annee",
          "title":"première année de construction",
          "description":"année de construction du local le plus ancien",
-         "example":1976,
+         "example":"1976",
          "type":"date",
          "format":"%Y",
          "constraints":{
@@ -386,7 +387,7 @@
          "name":"local_recent_annee",
          "title":"dernière année de construction",
          "description":"année de construction du local le plus récent",
-         "example":1987,
+         "example":"1987",
          "type":"date",
          "format":"%Y",
          "constraints":{
@@ -407,7 +408,7 @@
          "name":"proprio_personne",
          "title":"type de personne",
          "description":"indique s'il s'agit d'une personne physique ou morale",
-         "example":"personne morale|personne physique",
+         "example":"personne morale",
          "type":"string",
          "constraints":{
             "required":false,
@@ -431,7 +432,7 @@
          "name":"sol_pollution_annee",
          "title":"année de la pollution du sol",
          "description":"année de constatation de la pollution du sol dans BASOL, SIS, ou autre source de données",
-         "example":1996,
+         "example":"1996",
          "type":"date",
          "format":"%Y",
          "constraints":{
@@ -635,7 +636,7 @@
          "title":"coordonnées du centroïde",
          "description":"coordonnées géographiques du centroïde du site au format WKT",
          "example":"POINT(49.2527 3.9815)",
-         "type":"geopoint",
+         "type":"string",
          "constraints":{
             "required":true
          }
@@ -645,7 +646,7 @@
          "title":"géométrie surfacique",
          "description":"géométrie du périmètre du site au format WKT ([Well_Known-Text](https:\/\/fr.wikipedia.org\/wiki\/Well-known_text)",
          "example":"POLYGON((49.33 3.95, 49.38 3.89, 49.42 3.96, ...))",
-         "type":"geopoint",
+         "type":"string",
          "constraints":{
             "required":false
          }
