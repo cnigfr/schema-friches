@@ -13,9 +13,9 @@
       "wasteland"
    ],
    "countryCode":"FR",
-   "homepage":"https://github.com/cnigfr/Friches",
-   "path":"https://raw.githubusercontent.com/cnigfr/Friches/main/schema/schema.json",
-   "image":"https://raw.githubusercontent.com/cnigfr/Friches/main/schema/image.jpg",
+   "homepage":"https://github.com/cnigfr/schema-friches",
+   "path":"https://github.com/cnigfr/schema-friches/raw/v1.0.0/schema.json",
+   "image":"https://github.com/cnigfr/schema-friches/raw/v1.0.0/annexes_schema/image.jpg",
    "licenses":[
       {
          "title":"Etalab Licence Ouverte 2.0",
@@ -27,18 +27,18 @@
       {
          "title":"Fichier valide",
          "name":"exemple-valide-csv",
-         "path":"https://raw.githubusercontent.com/cnigfr/Friches/main/schema/fichier-valide.csv"
+         "path":"https://github.com/cnigfr/schema-friches/raw/v1.0.0/fichier-valide.csv"
       }
    ],
    "sources":[
       {
          "title":"Standard CNIG Friches",
-         "path":"https://github.com/cnigfr/Friches/blob/main/standard"
+         "path":"https://github.com/cnigfr/schema-friches/blob/main/standard"
       }
    ],
    "created":"2022-04-21",
    "lastModified":"2022-12-09",
-   "version":"v2022-12",
+   "version":"v1.0.1",
    "contributors":[
       {
          "title":"GT CNIG Friches",
