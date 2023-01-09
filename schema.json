@@ -104,7 +104,10 @@
                "friche loisir tourisme hôtellerie",
                "friche enseignement",
                "friche cultuelle",
-               "mixte"
+               "mixte",
+               "inconnu",
+               "autre",
+               "sans objet"
             ]
          }
       },
@@ -176,7 +179,10 @@
                "suppression des risques d'incendie et d'explosion",
                "surveillance des effets de l'installation sur son environnement",
                "mesures de gestion de pollution ou restrictions temporaires",
-               "existence d'une attestation de mise en sécurité"
+               "existence d'une attestation de mise en sécurité",
+               "inconnu",
+               "autre",
+               "sans objet"
             ]
          }
       },
@@ -193,7 +199,10 @@
                "partiellement inoccupé",
                "occupation transitoire ou temporaire",
                "occupation illicite supposée",
-			   "occupation illicite avérée"
+			   "occupation illicite avérée",
+            "inconnu",
+            "autre",
+            "sans objet"
             ]
          }
       },
@@ -209,7 +218,10 @@
                "friche potentielle",
                "friche sans projet",
                "friche avec projet",
-               "friche reconvertie"
+               "friche reconvertie",
+               "inconnu",
+               "autre",
+               "sans objet"
             ]
          }
       },
@@ -287,7 +299,10 @@
                "industriel",
                "commercial",
                "résidentiel",
-               "secteur tertiaire"
+               "secteur tertiaire",
+               "inconnu",
+               "autre",
+               "sans objet"
             ]
          }
       },
@@ -322,7 +337,9 @@
             "enum":[
                "amiante",
                "plomb",
-               "inconnu"
+               "inconnu",
+               "autre",
+               "sans objet"
             ]
          }
       },
@@ -337,7 +354,10 @@
             "enum":[
                "occupé",
                "partiellement occupé",
-               "vacant"
+               "vacant",
+               "inconnu",
+               "autre",
+               "sans objet"
             ]
          }
       },
@@ -352,7 +372,10 @@
             "enum":[
                "aucun",
                "présence d'un bâtiment d'intérêt",
-               "présence d'un bâtiment classé"
+               "présence d'un bâtiment classé",
+               "inconnu",
+               "autre",
+               "sans objet"
             ]
          }
       },
@@ -368,7 +391,10 @@
                "dégradation inexistante ou faible",
                "dégradation moyenne",
                "dégradation très importante",
-               "dégradation hétérogène"
+               "dégradation hétérogène",
+               "inconnu",
+               "autre",
+               "sans objet"
             ]
          }
       },
@@ -414,7 +440,10 @@
             "required":false,
             "enum":[
                "personne physique",
-               "personne morale"
+               "personne morale",
+               "inconnu",
+               "autre",
+               "sans objet"
             ]
          }
       },
@@ -452,7 +481,10 @@
 			   "pollution traitée",
                "pollution peu probable",
                "pollution supposée",
-               "pollution avérée"
+               "pollution avérée",
+               "inconnu",
+               "autre",
+               "sans objet"
             ]
          }
       },
@@ -468,7 +500,10 @@
                "Dépôt de déchets, stockages de produits",
                "Pollution due au fonctionnement de l'installation",
                "Origine accidentelle (transport, transbordement, manipulation,...)",
-               "Retombées atmosphériques"
+               "Retombées atmosphériques",
+               "inconnu",
+               "autre",
+               "sans objet"
             ]
          }
       },
@@ -530,7 +565,10 @@
 			   "Zc",
 			   "ZCa",
 			   "ZnC",
-			   "RNU"
+			   "RNU",
+            "inconnu",
+            "autre",
+            "sans objet"
             ]
          }
       },
@@ -567,7 +605,10 @@
                "CC",
                "PLU",
                "PLUI",
-               "PSMV"
+               "PSMV",
+               "inconnu",
+               "autre",
+               "sans objet"
             ]
          }
       },
