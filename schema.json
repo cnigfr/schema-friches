@@ -610,7 +610,7 @@
          "type":"string",
          "constraints":{
             "required":false,
-            "pattern":"(?:(?:^|\\|)(\\d{1,}|)\\1+\\d{1,})+$"
+            "pattern": "\\d{1,}(\\|\\d{1,})?(\\|\\d{1,})?"
          }
       },
       {
