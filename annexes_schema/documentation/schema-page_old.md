@@ -4,9 +4,9 @@ Standard CNIG Friches
 
 Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux friches urbanisées. Une friche "urbanisée" a connu une activité économique (industrielle, artisanale, logistique, commerciale, de loisir, tertiaire, agricole), un usage résidentiel ou un usage d'équipement. La définition règlementaire décrit "tout bien ou droit immobilier, bâti ou non bâti, inutilisé et dont l'état, la configuration ou l'occupation totale ou partielle ne permet pas un réemploi sans un aménagement ou des travaux préalables". En particulier, les friches dites "agricoles", au sens des espaces auparavant cultivés et qui se sont enfrichés, ne sont pas prises en compte dans le cadre de ce standard, au contraire des bâtis agricoles désaffectés.
 
-- Schéma créé le : 04/21/22
-- Site web : https://github.com/cnigfr/schema-friches
-- Version : v1.0.1
+- Schéma créé le : 09/12/2022
+- Site web : https://github.com/cnigfr/Friches
+- Version : v2022-12
 - Valeurs manquantes : `""`, `"NA"`, `"NaN"`, `"N/A"`
 - Clé primaire : `site_id`
 
@@ -63,8 +63,8 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
 | [source_url](#url-de-la-source---propriété-source_url) | chaîne de caractères  | Non |
 | [source_producteur](#identification-du-producteur---propriété-source_producteur) | chaîne de caractères  | Non |
 | [source_contact](#adresse-mail---propriété-source_contact) | chaîne de caractères  | Non |
-| [geompoint](#coordonnées-du-centroïde---propriété-geompoint) | chaîne de caractères  | Oui |
-| [geomsurf](#géométrie-surfacique---propriété-geomsurf) | chaîne de caractères  | Non |
+| [geompoint](#coordonnées-du-centroïde---propriété-geompoint) | point géographique  | Oui |
+| [geomsurf](#géométrie-surfacique---propriété-geomsurf) | point géographique  | Non |
 
 #### identifiant du site - Propriété `site_id`
 
@@ -100,9 +100,6 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
     - friche enseignement
     - friche cultuelle
     - mixte
-    - inconnu
-    - autre
-    - sans objet
 
 #### adresse du site - Propriété `site_adresse`
 
@@ -136,7 +133,7 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
 
 #### type de sécurisation - Propriété `site_securite`
 
-> *Description : description du (des) type(s) de sécurisation selon l'article R512-75-1 al. IV code de l'environnement<br/>Ex : interdictions ou limitations d'accès au site*
+> *Description : description du (des) type(s) de sécurisation selon l'article R512-75-1 al. IV code de l'environnement<br/>Ex : épandage de produits absorbants|gardiennage*
 - Valeur optionnelle
 - Type : chaîne de caractères
 - Valeurs autorisées : 
@@ -146,13 +143,10 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
     - surveillance des effets de l'installation sur son environnement
     - mesures de gestion de pollution ou restrictions temporaires
     - existence d'une attestation de mise en sécurité
-    - inconnu
-    - autre
-    - sans objet
 
 #### occupation du site - Propriété `site_occupation`
 
-> *Description : description de l'occupation du site<br/>Ex : partiellement inoccupé*
+> *Description : description de l'occupation du site<br/>Ex : partiellement occupé*
 - Valeur optionnelle
 - Type : chaîne de caractères
 - Valeurs autorisées : 
@@ -161,9 +155,6 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
     - occupation transitoire ou temporaire
     - occupation illicite supposée
     - occupation illicite avérée
-    - inconnu
-    - autre
-    - sans objet
 
 #### statut du site - Propriété `site_statut`
 
@@ -175,13 +166,10 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
     - friche sans projet
     - friche avec projet
     - friche reconvertie
-    - inconnu
-    - autre
-    - sans objet
 
 #### site web d'un éventuel projet sur le site - Propriété `site_projet_url`
 
-> *Description : site web ou adresse mail institutionnelle du porteur de projet de reconversion, le cas échéant<br/>Ex : http://www.reconvtafriche.fr/site_tulipe/laureat2021.html*
+> *Description : site web ou adresse mail institutionnelle du porteur de projet de reconversion, le cas échéant<br/>Ex : www.reconvtafriche.fr/site_tulipe/laureat2021.html*
 - Valeur optionnelle
 - Type : chaîne de caractères (format `uri`)
 
@@ -217,7 +205,7 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
 
 #### type de bâtiments - Propriété `bati_type`
 
-> *Description : type de bâtiments présents dans le périmètre de la friche<br/>Ex : secteur tertiaire*
+> *Description : type de bâtiments présents dans le périmètre de la friche<br/>Ex : secteur tertiaire|industriel*
 - Valeur optionnelle
 - Type : chaîne de caractères
 - Valeurs autorisées : 
@@ -225,9 +213,6 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
     - commercial
     - résidentiel
     - secteur tertiaire
-    - inconnu
-    - autre
-    - sans objet
 
 #### nombre de bâtiments - Propriété `bati_nombre`
 
@@ -249,9 +234,6 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
 - Valeurs autorisées : 
     - amiante
     - plomb
-    - inconnu
-    - autre
-    - sans objet
 
 #### état de vacance - Propriété `bati_vacance`
 
@@ -262,9 +244,6 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
     - occupé
     - partiellement occupé
     - vacant
-    - inconnu
-    - autre
-    - sans objet
 
 #### présence de bâti patrimonial - Propriété `bati_patrimoine`
 
@@ -275,9 +254,6 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
     - aucun
     - présence d'un bâtiment d'intérêt
     - présence d'un bâtiment classé
-    - inconnu
-    - autre
-    - sans objet
 
 #### dégradation des bâtiment - Propriété `bati_etat`
 
@@ -289,9 +265,6 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
     - dégradation moyenne
     - dégradation très importante
     - dégradation hétérogène
-    - inconnu
-    - autre
-    - sans objet
 
 #### première année de construction - Propriété `local_ancien_annee`
 
@@ -313,15 +286,12 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
 
 #### type de personne - Propriété `proprio_personne`
 
-> *Description : indique s'il s'agit d'une personne physique ou morale<br/>Ex : personne morale*
+> *Description : indique s'il s'agit d'une personne physique ou morale<br/>Ex : personne morale|personne physique*
 - Valeur optionnelle
 - Type : chaîne de caractères
 - Valeurs autorisées : 
     - personne physique
     - personne morale
-    - inconnu
-    - autre
-    - sans objet
 
 #### nom du propriétaire - Propriété `proprio_nom`
 
@@ -346,9 +316,6 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
     - pollution peu probable
     - pollution supposée
     - pollution avérée
-    - inconnu
-    - autre
-    - sans objet
 
 #### origine de la pollution du sol - Propriété `sol_pollution_origine`
 
@@ -360,9 +327,6 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
     - Pollution due au fonctionnement de l'installation
     - Origine accidentelle (transport, transbordement, manipulation,...)
     - Retombées atmosphériques
-    - inconnu
-    - autre
-    - sans objet
 
 #### commentaire sur la pollution du sol - Propriété `sol_pollution_commentaire`
 
@@ -403,9 +367,6 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
     - ZCa
     - ZnC
     - RNU
-    - inconnu
-    - autre
-    - sans objet
 
 #### libellé de la zone d'urbanisme - Propriété `urba_zone_lib`
 
@@ -430,9 +391,6 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
     - PLU
     - PLUI
     - PSMV
-    - inconnu
-    - autre
-    - sans objet
 
 #### distances d'accès aux réseaux - Propriété `desserte_distance`
 
@@ -474,10 +432,10 @@ Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux
 
 > *Description : coordonnées géographiques du centroïde du site au format WKT<br/>Ex : POINT(49.2527 3.9815)*
 - Valeur obligatoire
-- Type : chaîne de caractères
+- Type : point géographique
 
 #### géométrie surfacique - Propriété `geomsurf`
 
 > *Description : géométrie du périmètre du site au format WKT ([Well_Known-Text](https://fr.wikipedia.org/wiki/Well-known_text)<br/>Ex : POLYGON((49.33 3.95, 49.38 3.89, 49.42 3.96, ...))*
 - Valeur optionnelle
-- Type : chaîne de caractères
+- Type : point géographique
