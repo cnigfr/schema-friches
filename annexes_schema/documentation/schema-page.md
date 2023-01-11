@@ -4,7 +4,7 @@ Standard CNIG Friches
 
 Spécification du fichier d'échange conforme au standard CNIG Friches relatif aux friches urbanisées. Une friche "urbanisée" a connu une activité économique (industrielle, artisanale, logistique, commerciale, de loisir, tertiaire, agricole), un usage résidentiel ou un usage d'équipement. La définition règlementaire décrit "tout bien ou droit immobilier, bâti ou non bâti, inutilisé et dont l'état, la configuration ou l'occupation totale ou partielle ne permet pas un réemploi sans un aménagement ou des travaux préalables". En particulier, les friches dites "agricoles", au sens des espaces auparavant cultivés et qui se sont enfrichés, ne sont pas prises en compte dans le cadre de ce standard, au contraire des bâtis agricoles désaffectés.
 
-- Schéma créé le : 04/21/22
+- Schéma créé le : 11/01/23
 - Site web : https://github.com/cnigfr/schema-friches
 - Version : v1.0.1
 - Valeurs manquantes : `""`, `"NA"`, `"NaN"`, `"N/A"`
