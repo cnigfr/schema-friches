@@ -32,9 +32,12 @@ Le groupe de travail dispose d'une **[page dédiée](http://cnig.gouv.fr/?page_i
 
 Le [projet de standard CNIG Friches](https://github.com/cnigfr/Friches/tree/main/standard) fournit une description littérale des champs, non exlusivement technique.
 
-Le fichier [schema.json](https://github.com/cnigfr/Friches/tree/main/schema.json) contient **l'implémentation technique** du modèle conceptuel de données (MCD), au format json destiné à être référencé sur schema.data.gouv.fr. Ce schéma respecte le standard [Table Schema](https://specs.frictionlessdata.io/table-schema/).
+Le fichier [schema.json](https://github.com/cnigfr/Friches/tree/main/schema.json) contient **l'implémentation technique** du modèle conceptuel de données (MCD), au format json.
 
 Ce schéma (ou Modèle Conceptuel de Donées - MCD) modélise les informations relatives aux friches. Adopter et respecter ce schéma est une garantie, non seulement d’efficacité et de pertinence des informations collectées, mais aussi d’interopérabilité et de facilité du partage des données.
+
+Il respecte le standard [Table Schema](https://specs.frictionlessdata.io/table-schema/) et est référencé sur [schema.data.gouv.fr](https://schema.data.gouv.fr/cnigfr/schema-friches/). 
+
 
 ## Organisation du dépot
 
