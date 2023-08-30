@@ -467,7 +467,7 @@
             "required":false,
             "enum":[
                "pollution inexistante",
-			      "pollution traitée",
+	       "pollution traitée",
                "pollution peu probable",
                "pollution supposée",
                "pollution avérée",
@@ -486,10 +486,10 @@
          "constraints":{
             "required":false,
             "enum":[
-               "Dépôt de déchets, stockages de produits",
-               "Pollution due au fonctionnement de l'installation",
-               "Origine accidentelle (transport, transbordement, manipulation,...)",
-               "Retombées atmosphériques",
+               "dépôt de déchets, stockages de produits",
+               "pollution due au fonctionnement de l'installation",
+               "origine accidentelle (transport, transbordement, manipulation,...)",
+               "retombées atmosphériques",
                "inconnu",
                "autre",
                "sans objet"
