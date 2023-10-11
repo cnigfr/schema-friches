@@ -573,7 +573,7 @@
          }
       },
       {
-         "name":"urba_zone_formedomi",
+         "name":"urba_zone_formdomi",
          "title":"forme dominante de la zone",
          "description":"forme dominante de la zone d'urbanisme (cf. standard CNIG PLU : FORMDOMI)",
          "example":"0202",
