@@ -481,7 +481,7 @@
          "name":"sol_pollution_origine",
          "title":"origine de la pollution du sol",
          "description":"origine de la pollution du sol",
-         "example":"Pollution due au fonctionnement de l'installation",
+         "example":"pollution due au fonctionnement de l'installation",
          "type":"string",
          "constraints":{
             "required":false,
