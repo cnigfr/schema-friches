@@ -37,8 +37,8 @@
       }
    ],
    "created":"2022-04-21",
-   "lastModified":"2023-12-12",
-   "version":"v1.0.4",
+   "lastModified":"2023-10-11",
+   "version":"v1.0.3",
    "contributors":[
       {
          "title":"GT CNIG Friches",
@@ -235,43 +235,6 @@
          "format":"uri",
          "constraints":{
             "required":false
-         }
-      },
-	  {
-         "name":"site_reconv_annee",
-         "title":"année d'achèvement de la reconversion du site",
-         "description":"année d'achèvement de la reconversion du site",
-         "example":"2022",
-         "type":"date",
-         "format":"%Y",
-         "constraints":{
-            "required":false
-         }
-      },
-	  {
-         "name":"site_reconv_type",
-         "title":"type de reconversion du site",
-         "description":"type de reconversion du site",
-         "example":"aménagement d'espace public",
-         "type":"string",
-         "constraints":{
-            "required":false,
-			"enum":[
-               "habitat",			   
-               "bureau",
-			   "commerce",
-			   "industrie",
-			   "autres activités économiques",
-			   "équipement public",
-			   "aménagement d'espace public",
-			   "renaturation",
-			   "panneaux photovoltaïques",
-			   "énergie, hors photovoltaïque",
-			   "mixte",			  
-			   "inconnu",
-               "autre",
-               "sans objet"
-            ]
          }
       },
       {
