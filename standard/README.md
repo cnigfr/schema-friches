@@ -5,6 +5,6 @@ Le [géostandard CNIG Friches v2022-12](https://github.com/cnigfr/Friches/blob/m
 
  Il a été révisé en 2023 et actualisé dans cette [version 2022 rev. 2023-12](https://github.com/cnigfr/Friches/blob/main/standard/231222_Standard_CNIG_Friches_v2023-12.pdf)
 
-Il est publié, avec son suivi des évolutions, sur [la page des ressources du GT CNIG Friches](http://cnig.gouv.fr/ressource-friches-a26047.html).
+Il est publié, avec son [suivi des évolutions](https://github.com/cnigfr/schema-friches/blob/main/standard/231222_Suivi_evolutions_standard_Friches_v2023-12.pdf), sur [la page des ressources du GT CNIG Friches](http://cnig.gouv.fr/ressource-friches-a26047.html).
 
 
