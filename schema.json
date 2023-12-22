@@ -14,8 +14,8 @@
    ],
    "countryCode":"FR",
    "homepage":"https://github.com/cnigfr/schema-friches",
-   "path":"https://github.com/cnigfr/schema-friches/raw/v1.0.3/schema.json",
-   "image":"https://github.com/cnigfr/schema-friches/raw/v1.0.3/annexes_schema/image.jpg",
+   "path":"https://github.com/cnigfr/schema-friches/raw/v1.0.4/schema.json",
+   "image":"https://github.com/cnigfr/schema-friches/raw/v1.0.4/annexes_schema/image.jpg",
    "licenses":[
       {
          "title":"Etalab Licence Ouverte 2.0",
@@ -27,7 +27,7 @@
       {
          "title":"Fichier valide",
          "name":"exemple-valide-csv",
-         "path":"https://github.com/cnigfr/schema-friches/raw/v1.0.3/fichier-valide.csv"
+         "path":"https://github.com/cnigfr/schema-friches/raw/v1.0.4/fichier-valide.csv"
       }
    ],
    "sources":[
@@ -37,7 +37,7 @@
       }
    ],
    "created":"2022-04-21",
-   "lastModified":"2023-12-12",
+   "lastModified":"2023-12-22",
    "version":"v1.0.4",
    "contributors":[
       {
@@ -239,7 +239,7 @@
       },
 	  {
          "name":"site_reconv_annee",
-         "title":"année d'achèvement de la reconversion du site",
+         "title":"année d'achèvement de reconversion",
          "description":"année d'achèvement de la reconversion du site",
          "example":"2022",
          "type":"date",
@@ -250,25 +250,25 @@
       },
 	  {
          "name":"site_reconv_type",
-         "title":"type de reconversion du site",
+         "title":"type de reconversion",
          "description":"type de reconversion du site",
          "example":"aménagement d'espace public",
          "type":"string",
          "constraints":{
             "required":false,
-			"enum":[
+	       "enum":[
                "habitat",			   
                "bureau",
-			   "commerce",
-			   "industrie",
-			   "autres activités économiques",
-			   "équipement public",
-			   "aménagement d'espace public",
-			   "renaturation",
-			   "panneaux photovoltaïques",
-			   "énergie, hors photovoltaïque",
-			   "mixte",			  
-			   "inconnu",
+	       "commerce",
+	       "industrie",
+	       "autres activités économiques",
+   	       "équipement public",
+	       "aménagement d'espace public",
+	       "renaturation",
+	       "panneaux photovoltaïques",
+	       "énergie, hors photovoltaïque",
+	       "mixte",			  
+	       "inconnu",
                "autre",
                "sans objet"
             ]
