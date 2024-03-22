@@ -151,7 +151,8 @@
          "type":"string",
          "format":"uri",
          "constraints":{
-            "required":false
+            "required":false,
+	    "pattern": "^(https?:\/\/[^|\\s]*\\|)*https?:\/\/[^|\\s]*$"
          }
       },
       {
@@ -162,7 +163,8 @@
          "type":"string",
          "format":"uri",
          "constraints":{
-            "required":false
+            "required":false,
+	    "pattern": "^https?:\/\/[^|\\s]*$"
          }
       },
       {
@@ -233,7 +235,8 @@
          "type":"string",
          "format":"uri",
          "constraints":{
-            "required":false
+            "required":false,
+	    "pattern": "^(https?:\/\/[^|\\s]*)|([\\w\\-\\.]+@([\\w-]+\\.)+[\\w-]{2,})$"
          }
       },
 	  {
