@@ -151,8 +151,7 @@
          "type":"string",
          "format":"uri",
          "constraints":{
-            "required":false,
-            "pattern":"^http(s)?:\/\/[a-zA-Z0-9\.\/\?\_%+-]+$"
+            "required":false
          }
       },
       {
@@ -163,8 +162,7 @@
          "type":"string",
          "format":"uri",
          "constraints":{
-            "required":false,
-            "pattern":"^http(s)?:\/\/[a-zA-Z0-9\.\/\?\_%+-]+$"
+            "required":false
          }
       },
       {
@@ -235,8 +233,7 @@
          "type":"string",
          "format":"uri",
          "constraints":{
-            "required":false,
-            "pattern":"^http(s)?:\/\/[a-zA-Z0-9\.\/\?\_%+-]+$"
+            "required":false
          }
       },
 	  {
