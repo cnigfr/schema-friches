@@ -14,8 +14,8 @@
    ],
    "countryCode":"FR",
    "homepage":"https://github.com/cnigfr/schema-friches",
-   "path":"https://github.com/cnigfr/schema-friches/raw/v1.0.4/schema.json",
-   "image":"https://github.com/cnigfr/schema-friches/raw/v1.0.4/annexes_schema/image.jpg",
+   "path":"https://github.com/cnigfr/schema-friches/raw/v1.0.5/schema.json",
+   "image":"https://github.com/cnigfr/schema-friches/raw/v1.0.5/annexes_schema/image.jpg",
    "licenses":[
       {
          "title":"Etalab Licence Ouverte 2.0",
@@ -27,7 +27,7 @@
       {
          "title":"Fichier valide",
          "name":"exemple-valide-csv",
-         "path":"https://github.com/cnigfr/schema-friches/raw/v1.0.4/fichier-valide.csv"
+         "path":"https://github.com/cnigfr/schema-friches/raw/v1.0.5/fichier-valide.csv"
       }
    ],
    "sources":[
@@ -38,7 +38,7 @@
    ],
    "created":"2022-04-21",
    "lastModified":"2023-12-22",
-   "version":"v1.0.4",
+   "version":"v1.0.5",
    "contributors":[
       {
          "title":"GT CNIG Friches",
