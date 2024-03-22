@@ -146,10 +146,9 @@
       {
          "name":"site_url",
          "title":"URL du site",
-         "description":"URL(s) des fiches du site dans BASIAS et/ou dans BASOL ou SIS et/ou dans un observatoire local, lorsqu'elles existent",
+         "description":"URL(s) des fiches du site dans BASIAS et/ou dans BASOL ou SIS et/ou dans un observatoire local, lorsqu'elles existent (si plusieurs URL, les séparer avec des '|')",
          "example":"http://fiches-risques.brgm.fr/georisques/basias-detaillee/AQI4008059",
          "type":"string",
-         "format":"uri",
          "constraints":{
             "required":false,
 	    "pattern": "^(https?:\/\/[^|\\s]*\\|)*https?:\/\/[^|\\s]*$"
