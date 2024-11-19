@@ -6,6 +6,8 @@
 
 Plateforme nationale [Cartofriches](https://cartofriches.cerema.fr/cartofriches/)
 
+[Inventorier ses friches - Guide méthodologique - Région SUD PACA - 2024](https://github.com/cnigfr/schema-friches/blob/main/documentation/241119_Inventorier%20ses%20friches%20-%20Guide%20m%C3%A9thodologique%20-%20R%C3%A9gion%20SUD%20PACA.pdf)
+
 * [Cartofriches présentée sur le site du CEREMA](https://www.cerema.fr/fr/mots-cles/cartofriches)
 
 [Laboratoire d’innovations foncières et territoriales innovantes](https://lifti.org/) (LIFTI)
