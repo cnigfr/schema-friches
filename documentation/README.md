@@ -14,6 +14,6 @@
 
 - [Observatoire NAFU Nouvelle-Aquitaine : Espaces Susceptibles d'être des Friches Urbanisées (ESFU)](https://github.com/cnigfr/Friches/tree/main/documentation/Observatoire%20NAFU%20Nouvelle-Aquitaine)
 
-- [Observatoire des friches Provence Alpes Côte d'Azur](https://connaissance-territoire.maregionsud.fr/la-plateforme/les-projets/observatoire-des-friches#c13157)
+- [Observatoire des friches Région Sud](https://connaissance-territoire.maregionsud.fr/la-plateforme/les-projets/observatoire-des-friches#c13157)
 
 - [data.gouv.fr](https://www.data.gouv.fr/fr/) plateforme de diffusion de données publiques de l'État français
