@@ -16,4 +16,6 @@
 
 - [Observatoire des friches Région Sud](https://connaissance-territoire.maregionsud.fr/la-plateforme/les-projets/observatoire-des-friches#c13157)
 
+- EPF Normandie - [Webinaire "Connaître les friches pour un développement territorial"](https://github.com/cnigfr/schema-friches/blob/main/documentation/250402_EPF_Normandie_webinaire_connaitre_les_friches_pour_un_developpement_territorial.pdf)
+
 - [data.gouv.fr](https://www.data.gouv.fr/fr/) plateforme de diffusion de données publiques de l'État français
