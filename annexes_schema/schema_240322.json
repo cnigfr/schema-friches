@@ -14,8 +14,8 @@
    ],
    "countryCode":"FR",
    "homepage":"https://github.com/cnigfr/schema-friches",
-   "path":"https://github.com/cnigfr/schema-friches/raw/v1.0.6/schema.json",
-   "image":"https://github.com/cnigfr/schema-friches/raw/v1.0.6/annexes_schema/image.jpg",
+   "path":"https://github.com/cnigfr/schema-friches/raw/v1.0.5/schema.json",
+   "image":"https://github.com/cnigfr/schema-friches/raw/v1.0.5/annexes_schema/image.jpg",
    "licenses":[
       {
          "title":"Etalab Licence Ouverte 2.0",
@@ -27,7 +27,7 @@
       {
          "title":"Fichier valide",
          "name":"exemple-valide-csv",
-         "path":"https://github.com/cnigfr/schema-friches/raw/v1.0.6/fichier-valide.csv"
+         "path":"https://github.com/cnigfr/schema-friches/raw/v1.0.5/fichier-valide.csv"
       }
    ],
    "sources":[
@@ -37,8 +37,8 @@
       }
    ],
    "created":"2022-04-21",
-   "lastModified":"2025-12-16",
-   "version":"v1.0.6",
+   "lastModified":"2024-03-22",
+   "version":"v1.0.5",
    "contributors":[
       {
          "title":"GT CNIG Friches",
@@ -104,8 +104,7 @@
                "friche loisir tourisme hôtellerie",
                "friche enseignement",
                "friche cultuelle",
-               "mixte - dominante habitat",
-			   "mixte - autre",
+               "mixte",
                "inconnu",
                "autre",
                "sans objet"
@@ -619,21 +618,6 @@
          "type":"string",
          "constraints":{
             "required":false
-         }
-      },
-	  {
-         "name":"urba_zaer",
-         "title":"situation en zone d'accélération des énergies renouvelables",
-         "description":"le site est situé (oui / non) en zone d'accélération des énergies renouvelables",
-         "example":"non",
-         "type":"string",
-         "constraints":{
-            "required":true,
-			"enum":[
-               "oui",
-               "non",
-               "inconnu"
-            ]
          }
       },
       {
